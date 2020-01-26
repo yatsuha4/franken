@@ -7,32 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26CA73B623DDA46A007AAD42 /* Updatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73B423DDA46A007AAD42 /* Updatable.cpp */; };
-		26CA73B723DDA46A007AAD42 /* Updatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73B523DDA46A007AAD42 /* Updatable.hpp */; };
-		26CA73B923DDA848007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73B823DDA848007AAD42 /* stdafx.hpp */; };
-		26CA73BC23DDAB61007AAD42 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73BA23DDAB60007AAD42 /* Object.cpp */; };
-		26CA73BD23DDAB61007AAD42 /* Object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73BB23DDAB60007AAD42 /* Object.hpp */; };
-		26CA73C023DDBFD0007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73BE23DDBFD0007AAD42 /* Component.cpp */; };
-		26CA73C123DDBFD0007AAD42 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73BF23DDBFD0007AAD42 /* Component.hpp */; };
-		26CA73C423DDC122007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73C223DDC122007AAD42 /* Context.cpp */; };
-		26CA73C523DDC122007AAD42 /* Context.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73C323DDC122007AAD42 /* Context.hpp */; };
-		26CA73CA23DDD2D0007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73C823DDD2D0007AAD42 /* Application.hpp */; };
-		26CA73CB23DDD2D0007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73C923DDD2D0007AAD42 /* Application.cpp */; };
+		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
+		26CA747A23DE0494007AAD42 /* Updatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746C23DE0494007AAD42 /* Updatable.cpp */; };
+		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
+		26CA747C23DE0494007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746E23DE0494007AAD42 /* Component.cpp */; };
+		26CA747D23DE0494007AAD42 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746F23DE0494007AAD42 /* Object.cpp */; };
+		26CA747E23DE0494007AAD42 /* Context.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747023DE0494007AAD42 /* Context.hpp */; };
+		26CA747F23DE0494007AAD42 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747123DE0494007AAD42 /* Component.hpp */; };
+		26CA748023DE0494007AAD42 /* Object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747223DE0494007AAD42 /* Object.hpp */; };
+		26CA748123DE0494007AAD42 /* Updatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747323DE0494007AAD42 /* Updatable.hpp */; };
+		26CA748223DE0494007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747623DE0494007AAD42 /* Application.hpp */; };
+		26CA748323DE0494007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA747723DE0494007AAD42 /* Application.cpp */; };
+		26CA748423DE0494007AAD42 /* fk.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747823DE0494007AAD42 /* fk.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		26CA73B423DDA46A007AAD42 /* Updatable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Updatable.cpp; sourceTree = "<group>"; };
-		26CA73B523DDA46A007AAD42 /* Updatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Updatable.hpp; sourceTree = "<group>"; };
-		26CA73B823DDA848007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
-		26CA73BA23DDAB60007AAD42 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
-		26CA73BB23DDAB60007AAD42 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
-		26CA73BE23DDBFD0007AAD42 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
-		26CA73BF23DDBFD0007AAD42 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
-		26CA73C223DDC122007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
-		26CA73C323DDC122007AAD42 /* Context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Context.hpp; sourceTree = "<group>"; };
-		26CA73C823DDD2D0007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
-		26CA73C923DDD2D0007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
+		26CA746C23DE0494007AAD42 /* Updatable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Updatable.cpp; sourceTree = "<group>"; };
+		26CA746D23DE0494007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
+		26CA746E23DE0494007AAD42 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		26CA746F23DE0494007AAD42 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		26CA747023DE0494007AAD42 /* Context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Context.hpp; sourceTree = "<group>"; };
+		26CA747123DE0494007AAD42 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+		26CA747223DE0494007AAD42 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		26CA747323DE0494007AAD42 /* Updatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Updatable.hpp; sourceTree = "<group>"; };
+		26CA747623DE0494007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		26CA747723DE0494007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		26CA747823DE0494007AAD42 /* fk.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fk.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		26CA739D23DDA44E007AAD42 = {
 			isa = PBXGroup;
 			children = (
-				26CA73B223DDA46A007AAD42 /* libfk */,
+				26CA746923DE0494007AAD42 /* fk */,
 				26CA73A723DDA44E007AAD42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,45 +64,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26CA73B223DDA46A007AAD42 /* libfk */ = {
+		26CA746923DE0494007AAD42 /* fk */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73C623DDD2D0007AAD42 /* platform */,
-				26CA73B323DDA46A007AAD42 /* framework */,
-				26CA73B823DDA848007AAD42 /* stdafx.hpp */,
+				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
+				26CA746B23DE0494007AAD42 /* framework */,
+				26CA747423DE0494007AAD42 /* platform */,
+				26CA747823DE0494007AAD42 /* fk.hpp */,
 			);
-			name = libfk;
-			path = ../../../libfk;
+			name = fk;
+			path = ../../../fk;
 			sourceTree = "<group>";
 		};
-		26CA73B323DDA46A007AAD42 /* framework */ = {
+		26CA746B23DE0494007AAD42 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73BE23DDBFD0007AAD42 /* Component.cpp */,
-				26CA73BF23DDBFD0007AAD42 /* Component.hpp */,
-				26CA73C223DDC122007AAD42 /* Context.cpp */,
-				26CA73C323DDC122007AAD42 /* Context.hpp */,
-				26CA73BA23DDAB60007AAD42 /* Object.cpp */,
-				26CA73BB23DDAB60007AAD42 /* Object.hpp */,
-				26CA73B423DDA46A007AAD42 /* Updatable.cpp */,
-				26CA73B523DDA46A007AAD42 /* Updatable.hpp */,
+				26CA746C23DE0494007AAD42 /* Updatable.cpp */,
+				26CA746D23DE0494007AAD42 /* Context.cpp */,
+				26CA746E23DE0494007AAD42 /* Component.cpp */,
+				26CA746F23DE0494007AAD42 /* Object.cpp */,
+				26CA747023DE0494007AAD42 /* Context.hpp */,
+				26CA747123DE0494007AAD42 /* Component.hpp */,
+				26CA747223DE0494007AAD42 /* Object.hpp */,
+				26CA747323DE0494007AAD42 /* Updatable.hpp */,
 			);
 			path = framework;
 			sourceTree = "<group>";
 		};
-		26CA73C623DDD2D0007AAD42 /* platform */ = {
+		26CA747423DE0494007AAD42 /* platform */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73C723DDD2D0007AAD42 /* wx */,
+				26CA747523DE0494007AAD42 /* wx */,
 			);
 			path = platform;
 			sourceTree = "<group>";
 		};
-		26CA73C723DDD2D0007AAD42 /* wx */ = {
+		26CA747523DE0494007AAD42 /* wx */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73C823DDD2D0007AAD42 /* Application.hpp */,
-				26CA73C923DDD2D0007AAD42 /* Application.cpp */,
+				26CA747623DE0494007AAD42 /* Application.hpp */,
+				26CA747723DE0494007AAD42 /* Application.cpp */,
 			);
 			path = wx;
 			sourceTree = "<group>";
@@ -112,12 +115,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA73BD23DDAB61007AAD42 /* Object.hpp in Headers */,
-				26CA73B923DDA848007AAD42 /* stdafx.hpp in Headers */,
-				26CA73C123DDBFD0007AAD42 /* Component.hpp in Headers */,
-				26CA73C523DDC122007AAD42 /* Context.hpp in Headers */,
-				26CA73B723DDA46A007AAD42 /* Updatable.hpp in Headers */,
-				26CA73CA23DDD2D0007AAD42 /* Application.hpp in Headers */,
+				26CA747E23DE0494007AAD42 /* Context.hpp in Headers */,
+				26CA747F23DE0494007AAD42 /* Component.hpp in Headers */,
+				26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */,
+				26CA748123DE0494007AAD42 /* Updatable.hpp in Headers */,
+				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
+				26CA748023DE0494007AAD42 /* Object.hpp in Headers */,
+				26CA748223DE0494007AAD42 /* Application.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,11 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA73BC23DDAB61007AAD42 /* Object.cpp in Sources */,
-				26CA73C423DDC122007AAD42 /* Context.cpp in Sources */,
-				26CA73CB23DDD2D0007AAD42 /* Application.cpp in Sources */,
-				26CA73C023DDBFD0007AAD42 /* Component.cpp in Sources */,
-				26CA73B623DDA46A007AAD42 /* Updatable.cpp in Sources */,
+				26CA747A23DE0494007AAD42 /* Updatable.cpp in Sources */,
+				26CA747C23DE0494007AAD42 /* Component.cpp in Sources */,
+				26CA748323DE0494007AAD42 /* Application.cpp in Sources */,
+				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
+				26CA747B23DE0494007AAD42 /* Context.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +234,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../libfk/stdafx.hpp";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../fk/stdafx.hpp";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -293,7 +297,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../libfk/stdafx.hpp";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../fk/stdafx.hpp";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
