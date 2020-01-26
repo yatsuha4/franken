@@ -7,36 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26CA73B623DDA46A007AAD42 /* Updatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73B423DDA46A007AAD42 /* Updatable.cpp */; };
-		26CA73B723DDA46A007AAD42 /* Updatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73B523DDA46A007AAD42 /* Updatable.hpp */; };
-		26CA73B923DDA848007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73B823DDA848007AAD42 /* stdafx.hpp */; };
-		26CA73BC23DDAB61007AAD42 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73BA23DDAB60007AAD42 /* Object.cpp */; };
-		26CA73BD23DDAB61007AAD42 /* Object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73BB23DDAB60007AAD42 /* Object.hpp */; };
-		26CA73C023DDBFD0007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73BE23DDBFD0007AAD42 /* Component.cpp */; };
-		26CA73C123DDBFD0007AAD42 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73BF23DDBFD0007AAD42 /* Component.hpp */; };
-		26CA73C423DDC122007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73C223DDC122007AAD42 /* Context.cpp */; };
-		26CA73C523DDC122007AAD42 /* Context.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73C323DDC122007AAD42 /* Context.hpp */; };
-		26CA73CA23DDD2D0007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA73C823DDD2D0007AAD42 /* Application.hpp */; };
-		26CA73CB23DDD2D0007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA73C923DDD2D0007AAD42 /* Application.cpp */; };
+		26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746023DE0273007AAD42 /* stdafx.hpp */; };
+		26CA746623DE0273007AAD42 /* franken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746123DE0273007AAD42 /* franken.hpp */; };
+		26CA746723DE0273007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746323DE0273007AAD42 /* Application.hpp */; };
+		26CA746823DE0273007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746423DE0273007AAD42 /* Application.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		26CA73B423DDA46A007AAD42 /* Updatable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Updatable.cpp; sourceTree = "<group>"; };
-		26CA73B523DDA46A007AAD42 /* Updatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Updatable.hpp; sourceTree = "<group>"; };
-		26CA73B823DDA848007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
-		26CA73BA23DDAB60007AAD42 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
-		26CA73BB23DDAB60007AAD42 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
-		26CA73BE23DDBFD0007AAD42 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
-		26CA73BF23DDBFD0007AAD42 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
-		26CA73C223DDC122007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
-		26CA73C323DDC122007AAD42 /* Context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Context.hpp; sourceTree = "<group>"; };
-		26CA73C823DDD2D0007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
-		26CA73C923DDD2D0007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		26CA73D523DDD6FC007AAD42 /* libfranken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfranken.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CA746023DE0273007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
+		26CA746123DE0273007AAD42 /* franken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = franken.hpp; sourceTree = "<group>"; };
+		26CA746323DE0273007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		26CA746423DE0273007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		26CA73A423DDA44E007AAD42 /* Frameworks */ = {
+		26CA73D323DDD6FC007AAD42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,116 +32,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26CA739D23DDA44E007AAD42 = {
+		26CA73CC23DDD6FC007AAD42 = {
 			isa = PBXGroup;
 			children = (
-				26CA73B223DDA46A007AAD42 /* libfk */,
-				26CA73A723DDA44E007AAD42 /* Products */,
+				26CA745F23DE0273007AAD42 /* franken */,
+				26CA73D623DDD6FC007AAD42 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		26CA73A723DDA44E007AAD42 /* Products */ = {
+		26CA73D623DDD6FC007AAD42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73A623DDA44E007AAD42 /* libfk.a */,
+				26CA73D523DDD6FC007AAD42 /* libfranken.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26CA73B223DDA46A007AAD42 /* libfk */ = {
+		26CA745F23DE0273007AAD42 /* franken */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73C623DDD2D0007AAD42 /* platform */,
-				26CA73B323DDA46A007AAD42 /* framework */,
-				26CA73B823DDA848007AAD42 /* stdafx.hpp */,
+				26CA746023DE0273007AAD42 /* stdafx.hpp */,
+				26CA746123DE0273007AAD42 /* franken.hpp */,
+				26CA746223DE0273007AAD42 /* framework */,
 			);
-			name = libfk;
-			path = ../../../libfk;
+			name = franken;
+			path = ../../../franken;
 			sourceTree = "<group>";
 		};
-		26CA73B323DDA46A007AAD42 /* framework */ = {
+		26CA746223DE0273007AAD42 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				26CA73BE23DDBFD0007AAD42 /* Component.cpp */,
-				26CA73BF23DDBFD0007AAD42 /* Component.hpp */,
-				26CA73C223DDC122007AAD42 /* Context.cpp */,
-				26CA73C323DDC122007AAD42 /* Context.hpp */,
-				26CA73BA23DDAB60007AAD42 /* Object.cpp */,
-				26CA73BB23DDAB60007AAD42 /* Object.hpp */,
-				26CA73B423DDA46A007AAD42 /* Updatable.cpp */,
-				26CA73B523DDA46A007AAD42 /* Updatable.hpp */,
+				26CA746323DE0273007AAD42 /* Application.hpp */,
+				26CA746423DE0273007AAD42 /* Application.cpp */,
 			);
 			path = framework;
-			sourceTree = "<group>";
-		};
-		26CA73C623DDD2D0007AAD42 /* platform */ = {
-			isa = PBXGroup;
-			children = (
-				26CA73C723DDD2D0007AAD42 /* wx */,
-			);
-			path = platform;
-			sourceTree = "<group>";
-		};
-		26CA73C723DDD2D0007AAD42 /* wx */ = {
-			isa = PBXGroup;
-			children = (
-				26CA73C823DDD2D0007AAD42 /* Application.hpp */,
-				26CA73C923DDD2D0007AAD42 /* Application.cpp */,
-			);
-			path = wx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		26CA73A223DDA44E007AAD42 /* Headers */ = {
+		26CA73D123DDD6FC007AAD42 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA73BD23DDAB61007AAD42 /* Object.hpp in Headers */,
-				26CA73B923DDA848007AAD42 /* stdafx.hpp in Headers */,
-				26CA73C123DDBFD0007AAD42 /* Component.hpp in Headers */,
-				26CA73C523DDC122007AAD42 /* Context.hpp in Headers */,
-				26CA73B723DDA46A007AAD42 /* Updatable.hpp in Headers */,
-				26CA73CA23DDD2D0007AAD42 /* Application.hpp in Headers */,
+				26CA746623DE0273007AAD42 /* franken.hpp in Headers */,
+				26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */,
+				26CA746723DE0273007AAD42 /* Application.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		26CA73A523DDA44E007AAD42 /* libfk */ = {
+		26CA73D423DDD6FC007AAD42 /* libfranken */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26CA73AF23DDA44E007AAD42 /* Build configuration list for PBXNativeTarget "libfk" */;
+			buildConfigurationList = 26CA73DE23DDD6FC007AAD42 /* Build configuration list for PBXNativeTarget "libfranken" */;
 			buildPhases = (
-				26CA73A223DDA44E007AAD42 /* Headers */,
-				26CA73A323DDA44E007AAD42 /* Sources */,
-				26CA73A423DDA44E007AAD42 /* Frameworks */,
+				26CA73D123DDD6FC007AAD42 /* Headers */,
+				26CA73D223DDD6FC007AAD42 /* Sources */,
+				26CA73D323DDD6FC007AAD42 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = libfk;
-			productName = libfk;
-			productReference = 26CA73A623DDA44E007AAD42 /* libfk.a */;
+			name = libfranken;
+			productName = libfranken;
+			productReference = 26CA73D523DDD6FC007AAD42 /* libfranken.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		26CA739E23DDA44E007AAD42 /* Project object */ = {
+		26CA73CD23DDD6FC007AAD42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "YASUI Kentarow";
 				TargetAttributes = {
-					26CA73A523DDA44E007AAD42 = {
+					26CA73D423DDD6FC007AAD42 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 26CA73A123DDA44E007AAD42 /* Build configuration list for PBXProject "libfk" */;
+			buildConfigurationList = 26CA73D023DDD6FC007AAD42 /* Build configuration list for PBXProject "libfranken" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,33 +123,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 26CA739D23DDA44E007AAD42;
-			productRefGroup = 26CA73A723DDA44E007AAD42 /* Products */;
+			mainGroup = 26CA73CC23DDD6FC007AAD42;
+			productRefGroup = 26CA73D623DDD6FC007AAD42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26CA73A523DDA44E007AAD42 /* libfk */,
+				26CA73D423DDD6FC007AAD42 /* libfranken */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26CA73A323DDA44E007AAD42 /* Sources */ = {
+		26CA73D223DDD6FC007AAD42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA73BC23DDAB61007AAD42 /* Object.cpp in Sources */,
-				26CA73C423DDC122007AAD42 /* Context.cpp in Sources */,
-				26CA73CB23DDD2D0007AAD42 /* Application.cpp in Sources */,
-				26CA73C023DDBFD0007AAD42 /* Component.cpp in Sources */,
-				26CA73B623DDA46A007AAD42 /* Updatable.cpp in Sources */,
+				26CA746823DE0273007AAD42 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		26CA73AD23DDA44E007AAD42 /* Debug */ = {
+		26CA73DC23DDD6FC007AAD42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +186,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../libfk/stdafx.hpp";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../franken/stdafx.hpp";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -254,7 +210,7 @@
 			};
 			name = Debug;
 		};
-		26CA73AE23DDA44E007AAD42 /* Release */ = {
+		26CA73DD23DDD6FC007AAD42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +249,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../libfk/stdafx.hpp";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/../../../franken/stdafx.hpp";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -312,7 +268,7 @@
 			};
 			name = Release;
 		};
-		26CA73B023DDA44E007AAD42 /* Debug */ = {
+		26CA73DF23DDD6FC007AAD42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -322,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		26CA73B123DDA44E007AAD42 /* Release */ = {
+		26CA73E023DDD6FC007AAD42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -335,25 +291,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26CA73A123DDA44E007AAD42 /* Build configuration list for PBXProject "libfk" */ = {
+		26CA73D023DDD6FC007AAD42 /* Build configuration list for PBXProject "libfranken" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26CA73AD23DDA44E007AAD42 /* Debug */,
-				26CA73AE23DDA44E007AAD42 /* Release */,
+				26CA73DC23DDD6FC007AAD42 /* Debug */,
+				26CA73DD23DDD6FC007AAD42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26CA73AF23DDA44E007AAD42 /* Build configuration list for PBXNativeTarget "libfk" */ = {
+		26CA73DE23DDD6FC007AAD42 /* Build configuration list for PBXNativeTarget "libfranken" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26CA73B023DDA44E007AAD42 /* Debug */,
-				26CA73B123DDA44E007AAD42 /* Release */,
+				26CA73DF23DDD6FC007AAD42 /* Debug */,
+				26CA73E023DDD6FC007AAD42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 26CA739E23DDA44E007AAD42 /* Project object */;
+	rootObject = 26CA73CD23DDD6FC007AAD42 /* Project object */;
 }

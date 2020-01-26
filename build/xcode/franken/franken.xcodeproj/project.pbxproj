@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26CA743223DDE0BF007AAD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CA743123DDE0BF007AAD42 /* Assets.xcassets */; };
+		26CA743523DDE0BF007AAD42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CA743323DDE0BF007AAD42 /* MainMenu.xib */; };
+		26CA744023DDE213007AAD42 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA743F23DDE213007AAD42 /* main.cpp */; };
+		26CA744423DDE377007AAD42 /* libfk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744323DDE377007AAD42 /* libfk.a */; };
+		26CA744623DDE377007AAD42 /* libfranken.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744523DDE377007AAD42 /* libfranken.a */; };
+		26CA744E23DDE38C007AAD42 /* libwxtiff-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744723DDE38C007AAD42 /* libwxtiff-3.1.a */; };
+		26CA744F23DDE38C007AAD42 /* libwxjpeg-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744823DDE38C007AAD42 /* libwxjpeg-3.1.a */; };
+		26CA745023DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744923DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a */; };
+		26CA745123DDE38C007AAD42 /* libwxpng-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744A23DDE38C007AAD42 /* libwxpng-3.1.a */; };
+		26CA745223DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744B23DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a */; };
+		26CA745323DDE38C007AAD42 /* libwxscintilla-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744C23DDE38C007AAD42 /* libwxscintilla-3.1.a */; };
+		26CA745423DDE38C007AAD42 /* libwxregexu-3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA744D23DDE38C007AAD42 /* libwxregexu-3.1.a */; };
+		26CA745623DDE4EC007AAD42 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA745523DDE4EC007AAD42 /* IOKit.framework */; };
+		26CA745823DDE4F2007AAD42 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA745723DDE4F2007AAD42 /* Cocoa.framework */; };
+		26CA745A23DDE4F9007AAD42 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA745923DDE4F9007AAD42 /* Carbon.framework */; };
+		26CA745C23DDE509007AAD42 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA745B23DDE509007AAD42 /* libz.tbd */; };
+		26CA745E23DDE513007AAD42 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CA745D23DDE513007AAD42 /* libiconv.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26CA742B23DDE0BA007AAD42 /* franken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = franken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CA743123DDE0BF007AAD42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26CA743423DDE0BF007AAD42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		26CA743623DDE0BF007AAD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CA743923DDE0BF007AAD42 /* franken.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = franken.entitlements; sourceTree = "<group>"; };
+		26CA743F23DDE213007AAD42 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		26CA744323DDE377007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CA744523DDE377007AAD42 /* libfranken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfranken.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CA744723DDE38C007AAD42 /* libwxtiff-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxtiff-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwxtiff-3.1.a"; sourceTree = "<group>"; };
+		26CA744823DDE38C007AAD42 /* libwxjpeg-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxjpeg-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwxjpeg-3.1.a"; sourceTree = "<group>"; };
+		26CA744923DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwx_osx_cocoau_gl-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwx_osx_cocoau_gl-3.1.a"; sourceTree = "<group>"; };
+		26CA744A23DDE38C007AAD42 /* libwxpng-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxpng-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwxpng-3.1.a"; sourceTree = "<group>"; };
+		26CA744B23DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwx_osx_cocoau-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwx_osx_cocoau-3.1.a"; sourceTree = "<group>"; };
+		26CA744C23DDE38C007AAD42 /* libwxscintilla-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxscintilla-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwxscintilla-3.1.a"; sourceTree = "<group>"; };
+		26CA744D23DDE38C007AAD42 /* libwxregexu-3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwxregexu-3.1.a"; path = "../../../external/opt/mac/wxWidgets/lib/libwxregexu-3.1.a"; sourceTree = "<group>"; };
+		26CA745523DDE4EC007AAD42 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		26CA745723DDE4F2007AAD42 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		26CA745923DDE4F9007AAD42 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		26CA745B23DDE509007AAD42 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		26CA745D23DDE513007AAD42 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26CA742823DDE0BA007AAD42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26CA745E23DDE513007AAD42 /* libiconv.tbd in Frameworks */,
+				26CA745C23DDE509007AAD42 /* libz.tbd in Frameworks */,
+				26CA745A23DDE4F9007AAD42 /* Carbon.framework in Frameworks */,
+				26CA745823DDE4F2007AAD42 /* Cocoa.framework in Frameworks */,
+				26CA745623DDE4EC007AAD42 /* IOKit.framework in Frameworks */,
+				26CA744E23DDE38C007AAD42 /* libwxtiff-3.1.a in Frameworks */,
+				26CA744F23DDE38C007AAD42 /* libwxjpeg-3.1.a in Frameworks */,
+				26CA745023DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a in Frameworks */,
+				26CA745123DDE38C007AAD42 /* libwxpng-3.1.a in Frameworks */,
+				26CA745223DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a in Frameworks */,
+				26CA745323DDE38C007AAD42 /* libwxscintilla-3.1.a in Frameworks */,
+				26CA745423DDE38C007AAD42 /* libwxregexu-3.1.a in Frameworks */,
+				26CA744423DDE377007AAD42 /* libfk.a in Frameworks */,
+				26CA744623DDE377007AAD42 /* libfranken.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26CA742223DDE0BA007AAD42 = {
+			isa = PBXGroup;
+			children = (
+				26CA742D23DDE0BA007AAD42 /* franken */,
+				26CA742C23DDE0BA007AAD42 /* Products */,
+				26CA744223DDE377007AAD42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26CA742C23DDE0BA007AAD42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26CA742B23DDE0BA007AAD42 /* franken.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26CA742D23DDE0BA007AAD42 /* franken */ = {
+			isa = PBXGroup;
+			children = (
+				26CA743123DDE0BF007AAD42 /* Assets.xcassets */,
+				26CA743923DDE0BF007AAD42 /* franken.entitlements */,
+				26CA743623DDE0BF007AAD42 /* Info.plist */,
+				26CA743F23DDE213007AAD42 /* main.cpp */,
+				26CA743323DDE0BF007AAD42 /* MainMenu.xib */,
+			);
+			path = franken;
+			sourceTree = "<group>";
+		};
+		26CA744223DDE377007AAD42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26CA745D23DDE513007AAD42 /* libiconv.tbd */,
+				26CA745B23DDE509007AAD42 /* libz.tbd */,
+				26CA745923DDE4F9007AAD42 /* Carbon.framework */,
+				26CA745723DDE4F2007AAD42 /* Cocoa.framework */,
+				26CA745523DDE4EC007AAD42 /* IOKit.framework */,
+				26CA744923DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a */,
+				26CA744B23DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a */,
+				26CA744823DDE38C007AAD42 /* libwxjpeg-3.1.a */,
+				26CA744A23DDE38C007AAD42 /* libwxpng-3.1.a */,
+				26CA744D23DDE38C007AAD42 /* libwxregexu-3.1.a */,
+				26CA744C23DDE38C007AAD42 /* libwxscintilla-3.1.a */,
+				26CA744723DDE38C007AAD42 /* libwxtiff-3.1.a */,
+				26CA744323DDE377007AAD42 /* libfk.a */,
+				26CA744523DDE377007AAD42 /* libfranken.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26CA742A23DDE0BA007AAD42 /* franken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26CA743C23DDE0BF007AAD42 /* Build configuration list for PBXNativeTarget "franken" */;
+			buildPhases = (
+				26CA742723DDE0BA007AAD42 /* Sources */,
+				26CA742823DDE0BA007AAD42 /* Frameworks */,
+				26CA742923DDE0BA007AAD42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = franken;
+			productName = franken;
+			productReference = 26CA742B23DDE0BA007AAD42 /* franken.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26CA742323DDE0BA007AAD42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "YASUI Kentarow";
+				TargetAttributes = {
+					26CA742A23DDE0BA007AAD42 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 26CA742623DDE0BA007AAD42 /* Build configuration list for PBXProject "franken" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26CA742223DDE0BA007AAD42;
+			productRefGroup = 26CA742C23DDE0BA007AAD42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26CA742A23DDE0BA007AAD42 /* franken */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26CA742923DDE0BA007AAD42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26CA743223DDE0BF007AAD42 /* Assets.xcassets in Resources */,
+				26CA743523DDE0BF007AAD42 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26CA742723DDE0BA007AAD42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26CA744023DDE213007AAD42 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26CA743323DDE0BF007AAD42 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26CA743423DDE0BF007AAD42 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26CA743A23DDE0BF007AAD42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../..",
+					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
+					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		26CA743B23DDE0BF007AAD42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../..",
+					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
+					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		26CA743D23DDE0BF007AAD42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = franken/franken.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = franken/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.towerb.franken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26CA743E23DDE0BF007AAD42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = franken/franken.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = franken/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.towerb.franken;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26CA742623DDE0BA007AAD42 /* Build configuration list for PBXProject "franken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26CA743A23DDE0BF007AAD42 /* Debug */,
+				26CA743B23DDE0BF007AAD42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26CA743C23DDE0BF007AAD42 /* Build configuration list for PBXNativeTarget "franken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26CA743D23DDE0BF007AAD42 /* Debug */,
+				26CA743E23DDE0BF007AAD42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26CA742323DDE0BA007AAD42 /* Project object */;
+}
