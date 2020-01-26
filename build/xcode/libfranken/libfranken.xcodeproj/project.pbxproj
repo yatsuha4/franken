@@ -11,6 +11,8 @@
 		26CA746623DE0273007AAD42 /* franken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746123DE0273007AAD42 /* franken.hpp */; };
 		26CA746723DE0273007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746323DE0273007AAD42 /* Application.hpp */; };
 		26CA746823DE0273007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746423DE0273007AAD42 /* Application.cpp */; };
+		26CA748723DE063C007AAD42 /* MainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA748523DE063C007AAD42 /* MainFrame.cpp */; };
+		26CA748823DE063C007AAD42 /* MainFrame.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748623DE063C007AAD42 /* MainFrame.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		26CA746123DE0273007AAD42 /* franken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = franken.hpp; sourceTree = "<group>"; };
 		26CA746323DE0273007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		26CA746423DE0273007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		26CA748523DE063C007AAD42 /* MainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainFrame.cpp; sourceTree = "<group>"; };
+		26CA748623DE063C007AAD42 /* MainFrame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainFrame.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,10 @@
 		26CA746223DE0273007AAD42 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				26CA746323DE0273007AAD42 /* Application.hpp */,
 				26CA746423DE0273007AAD42 /* Application.cpp */,
+				26CA746323DE0273007AAD42 /* Application.hpp */,
+				26CA748523DE063C007AAD42 /* MainFrame.cpp */,
+				26CA748623DE063C007AAD42 /* MainFrame.hpp */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -78,6 +84,7 @@
 				26CA746623DE0273007AAD42 /* franken.hpp in Headers */,
 				26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */,
 				26CA746723DE0273007AAD42 /* Application.hpp in Headers */,
+				26CA748823DE063C007AAD42 /* MainFrame.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CA748723DE063C007AAD42 /* MainFrame.cpp in Sources */,
 				26CA746823DE0273007AAD42 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
