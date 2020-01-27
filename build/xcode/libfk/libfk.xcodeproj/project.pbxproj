@@ -19,6 +19,12 @@
 		26CA748223DE0494007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747623DE0494007AAD42 /* Application.hpp */; };
 		26CA748323DE0494007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA747723DE0494007AAD42 /* Application.cpp */; };
 		26CA748423DE0494007AAD42 /* fk.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA747823DE0494007AAD42 /* fk.hpp */; };
+		26CA749523DF27CF007AAD42 /* Logger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA749323DF27CF007AAD42 /* Logger.hpp */; };
+		26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA749423DF27CF007AAD42 /* Logger.cpp */; };
+		26CA749923DF2A70007AAD42 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA749723DF2A70007AAD42 /* Debug.cpp */; };
+		26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA749823DF2A70007AAD42 /* Debug.hpp */; };
+		26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA749C23DF2CF2007AAD42 /* String.hpp */; };
+		26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA749E23DF2EB6007AAD42 /* String.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		26CA747623DE0494007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		26CA747723DE0494007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		26CA747823DE0494007AAD42 /* fk.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fk.hpp; sourceTree = "<group>"; };
+		26CA749323DF27CF007AAD42 /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		26CA749423DF27CF007AAD42 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		26CA749723DF2A70007AAD42 /* Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
+		26CA749823DF2A70007AAD42 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
+		26CA749C23DF2CF2007AAD42 /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
+		26CA749E23DF2EB6007AAD42 /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +79,12 @@
 		26CA746923DE0494007AAD42 /* fk */ = {
 			isa = PBXGroup;
 			children = (
-				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
+				26CA749223DF27CF007AAD42 /* debug */,
+				26CA747823DE0494007AAD42 /* fk.hpp */,
 				26CA746B23DE0494007AAD42 /* framework */,
 				26CA747423DE0494007AAD42 /* platform */,
-				26CA747823DE0494007AAD42 /* fk.hpp */,
+				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
+				26CA749B23DF2CF2007AAD42 /* util */,
 			);
 			name = fk;
 			path = ../../../fk;
@@ -108,6 +122,26 @@
 			path = wx;
 			sourceTree = "<group>";
 		};
+		26CA749223DF27CF007AAD42 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				26CA749723DF2A70007AAD42 /* Debug.cpp */,
+				26CA749823DF2A70007AAD42 /* Debug.hpp */,
+				26CA749423DF27CF007AAD42 /* Logger.cpp */,
+				26CA749323DF27CF007AAD42 /* Logger.hpp */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		26CA749B23DF2CF2007AAD42 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				26CA749E23DF2EB6007AAD42 /* String.cpp */,
+				26CA749C23DF2CF2007AAD42 /* String.hpp */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -115,11 +149,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CA749523DF27CF007AAD42 /* Logger.hpp in Headers */,
 				26CA747E23DE0494007AAD42 /* Context.hpp in Headers */,
 				26CA747F23DE0494007AAD42 /* Component.hpp in Headers */,
 				26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */,
 				26CA748123DE0494007AAD42 /* Updatable.hpp in Headers */,
+				26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */,
 				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
+				26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */,
 				26CA748023DE0494007AAD42 /* Object.hpp in Headers */,
 				26CA748223DE0494007AAD42 /* Application.hpp in Headers */,
 			);
@@ -183,6 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				26CA747A23DE0494007AAD42 /* Updatable.cpp in Sources */,
+				26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */,
+				26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */,
+				26CA749923DF2A70007AAD42 /* Debug.cpp in Sources */,
 				26CA747C23DE0494007AAD42 /* Component.cpp in Sources */,
 				26CA748323DE0494007AAD42 /* Application.cpp in Sources */,
 				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
