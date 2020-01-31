@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		268DB11A23E4CA5400F763F7 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB11223E4CA5400F763F7 /* Application.hpp */; };
+		268DB11B23E4CA5400F763F7 /* ColumnBrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB11323E4CA5400F763F7 /* ColumnBrowser.cpp */; };
+		268DB11C23E4CA5400F763F7 /* MainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB11423E4CA5400F763F7 /* MainFrame.cpp */; };
+		268DB11E23E4CA5400F763F7 /* ColumnBrowser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB11623E4CA5400F763F7 /* ColumnBrowser.hpp */; };
+		268DB11F23E4CA5400F763F7 /* MainFrame.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB11723E4CA5400F763F7 /* MainFrame.hpp */; };
+		268DB12123E4CA5400F763F7 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB11923E4CA5400F763F7 /* Application.cpp */; };
 		26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746023DE0273007AAD42 /* stdafx.hpp */; };
 		26CA746623DE0273007AAD42 /* franken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746123DE0273007AAD42 /* franken.hpp */; };
-		26CA746723DE0273007AAD42 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746323DE0273007AAD42 /* Application.hpp */; };
-		26CA746823DE0273007AAD42 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746423DE0273007AAD42 /* Application.cpp */; };
-		26CA748723DE063C007AAD42 /* MainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA748523DE063C007AAD42 /* MainFrame.cpp */; };
-		26CA748823DE063C007AAD42 /* MainFrame.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748623DE063C007AAD42 /* MainFrame.hpp */; };
 		26CA748C23DE17CA007AAD42 /* AssetBrowser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748A23DE17CA007AAD42 /* AssetBrowser.hpp */; };
 		26CA748D23DE17CA007AAD42 /* AssetBrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA748B23DE17CA007AAD42 /* AssetBrowser.cpp */; };
-		26CA749023DE1E81007AAD42 /* ColumnBrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA748E23DE1E81007AAD42 /* ColumnBrowser.cpp */; };
-		26CA749123DE1E81007AAD42 /* ColumnBrowser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748F23DE1E81007AAD42 /* ColumnBrowser.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		268DB11223E4CA5400F763F7 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		268DB11323E4CA5400F763F7 /* ColumnBrowser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColumnBrowser.cpp; sourceTree = "<group>"; };
+		268DB11423E4CA5400F763F7 /* MainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainFrame.cpp; sourceTree = "<group>"; };
+		268DB11623E4CA5400F763F7 /* ColumnBrowser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColumnBrowser.hpp; sourceTree = "<group>"; };
+		268DB11723E4CA5400F763F7 /* MainFrame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainFrame.hpp; sourceTree = "<group>"; };
+		268DB11923E4CA5400F763F7 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		26CA73D523DDD6FC007AAD42 /* libfranken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfranken.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746023DE0273007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746123DE0273007AAD42 /* franken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = franken.hpp; sourceTree = "<group>"; };
-		26CA746323DE0273007AAD42 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
-		26CA746423DE0273007AAD42 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
-		26CA748523DE063C007AAD42 /* MainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainFrame.cpp; sourceTree = "<group>"; };
-		26CA748623DE063C007AAD42 /* MainFrame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainFrame.hpp; sourceTree = "<group>"; };
 		26CA748A23DE17CA007AAD42 /* AssetBrowser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AssetBrowser.hpp; sourceTree = "<group>"; };
 		26CA748B23DE17CA007AAD42 /* AssetBrowser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetBrowser.cpp; sourceTree = "<group>"; };
-		26CA748E23DE1E81007AAD42 /* ColumnBrowser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColumnBrowser.cpp; sourceTree = "<group>"; };
-		26CA748F23DE1E81007AAD42 /* ColumnBrowser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColumnBrowser.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +44,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		268DB11123E4CA5400F763F7 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				268DB11923E4CA5400F763F7 /* Application.cpp */,
+				268DB11223E4CA5400F763F7 /* Application.hpp */,
+				268DB11323E4CA5400F763F7 /* ColumnBrowser.cpp */,
+				268DB11623E4CA5400F763F7 /* ColumnBrowser.hpp */,
+				268DB11423E4CA5400F763F7 /* MainFrame.cpp */,
+				268DB11723E4CA5400F763F7 /* MainFrame.hpp */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
 		26CA73CC23DDD6FC007AAD42 = {
 			isa = PBXGroup;
 			children = (
@@ -63,26 +76,13 @@
 		26CA745F23DE0273007AAD42 /* franken */ = {
 			isa = PBXGroup;
 			children = (
+				268DB11123E4CA5400F763F7 /* main */,
 				26CA748923DE17CA007AAD42 /* asset */,
-				26CA746223DE0273007AAD42 /* framework */,
 				26CA746123DE0273007AAD42 /* franken.hpp */,
 				26CA746023DE0273007AAD42 /* stdafx.hpp */,
 			);
 			name = franken;
 			path = ../../../franken;
-			sourceTree = "<group>";
-		};
-		26CA746223DE0273007AAD42 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				26CA746423DE0273007AAD42 /* Application.cpp */,
-				26CA746323DE0273007AAD42 /* Application.hpp */,
-				26CA748E23DE1E81007AAD42 /* ColumnBrowser.cpp */,
-				26CA748F23DE1E81007AAD42 /* ColumnBrowser.hpp */,
-				26CA748523DE063C007AAD42 /* MainFrame.cpp */,
-				26CA748623DE063C007AAD42 /* MainFrame.hpp */,
-			);
-			path = framework;
 			sourceTree = "<group>";
 		};
 		26CA748923DE17CA007AAD42 /* asset */ = {
@@ -101,12 +101,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DB11F23E4CA5400F763F7 /* MainFrame.hpp in Headers */,
 				26CA746623DE0273007AAD42 /* franken.hpp in Headers */,
-				26CA749123DE1E81007AAD42 /* ColumnBrowser.hpp in Headers */,
+				268DB11E23E4CA5400F763F7 /* ColumnBrowser.hpp in Headers */,
+				268DB11A23E4CA5400F763F7 /* Application.hpp in Headers */,
 				26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */,
 				26CA748C23DE17CA007AAD42 /* AssetBrowser.hpp in Headers */,
-				26CA746723DE0273007AAD42 /* Application.hpp in Headers */,
-				26CA748823DE063C007AAD42 /* MainFrame.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,9 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA749023DE1E81007AAD42 /* ColumnBrowser.cpp in Sources */,
-				26CA748723DE063C007AAD42 /* MainFrame.cpp in Sources */,
-				26CA746823DE0273007AAD42 /* Application.cpp in Sources */,
+				268DB11C23E4CA5400F763F7 /* MainFrame.cpp in Sources */,
+				268DB12123E4CA5400F763F7 /* Application.cpp in Sources */,
+				268DB11B23E4CA5400F763F7 /* ColumnBrowser.cpp in Sources */,
 				26CA748D23DE17CA007AAD42 /* AssetBrowser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
