@@ -10,7 +10,7 @@ namespace main {
 /***********************************************************************//**
 	@brief コンストラクタ
 ***************************************************************************/
-Component::Component(Object& object)
+Component::Component(const ObjectPtr& object)
   : super(object)
 {
 }

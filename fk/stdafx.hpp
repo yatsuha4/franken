@@ -99,16 +99,15 @@ FK_DECLARE_CLASS(Logger);
 using namespace debug;
 
 namespace framework {
+FK_DECLARE_CLASS(Behaviour);
 FK_DECLARE_CLASS(Component);
 FK_DECLARE_CLASS(Context);
 FK_DECLARE_CLASS(Object);
-FK_DECLARE_CLASS(Updatable);
 }
 using namespace framework;
 
 namespace render {
 FK_DECLARE_CLASS(RenderParam);
-FK_DECLARE_CLASS(Renderable);
 FK_DECLARE_CLASS(Renderer);
 }
 using namespace render;

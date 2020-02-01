@@ -13,7 +13,7 @@ Component::~Component() {
 /***********************************************************************//**
 	@brief コンストラクタ
 ***************************************************************************/
-Component::Component(Object& object)
+Component::Component(const ObjectPtr& object)
   : object_(object)
 {
 }

@@ -17,7 +17,7 @@ class Component
   std::vector<PropertyPtr> properties_;
 
  public:
-  Component(Object& object);
+  Component(const ObjectPtr& object);
   ~Component();
 
  protected:

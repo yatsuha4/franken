@@ -23,11 +23,11 @@ Object::~Object() {
 	@copydoc Updatable::update
 ***************************************************************************/
 void Object::update() {
-  Updatable::update();
-  for(auto& component : components_) {
+  super::update();
+  for(auto& component : getComponents()) {
     component->update();
   }
-  for(auto& child : children_) {
+  for(auto& child : getChildren()) {
     child->update();
   }
 }
@@ -35,11 +35,9 @@ void Object::update() {
 	@copydoc Renderable::render
 ***************************************************************************/
 void Object::render(Renderer& renderer, const RenderParam& param) {
-  Renderable::render(renderer, param);
+  super::render(renderer, param);
   for(auto& component : getComponents()) {
-    if(auto renderable = std::dynamic_pointer_cast<Renderable>(component)) {
-      renderable->render(renderer, param);
-    }
+    component->render(renderer, param);
   }
   for(auto& child : getChildren()) {
     child->render(renderer, param);

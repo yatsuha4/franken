@@ -4,16 +4,21 @@
 #pragma once
 
 namespace fk {
-namespace render {
+namespace framework {
 /***********************************************************************//**
-	@brief 描画できるもの
+	@brief 動作するもの
 ***************************************************************************/
-class Renderable {
+class Behaviour {
  public:
-  Renderable() = default;
-  virtual ~Renderable() = default;
+  Behaviour() = default;
+  virtual ~Behaviour() = default;
 
-  virtual void render(Renderer& renderer, const RenderParam& param) {}
+  virtual void update();
+  virtual void render(Renderer& renderer, const RenderParam& param);
+
+ protected:
+  virtual void onUpdate() {}
+  virtual void onRender(Renderer& renderer, const RenderParam& param) {}
 };
 /***********************************************************************//**
 	$Id$

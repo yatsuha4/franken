@@ -3,7 +3,7 @@
 ***************************************************************************/
 #pragma once
 
-#include "fk/framework/Updatable.hpp"
+#include "fk/framework/Behaviour.hpp"
 
 namespace fk {
 namespace framework {
@@ -11,22 +11,22 @@ namespace framework {
 	@brief コンポーネント
 ***************************************************************************/
 class Component
-  : public Updatable
+  : public Behaviour
 {
-  using super = Updatable;
+  using super = Behaviour;
 
  private:
-  Object& object_;
+  std::weak_ptr<Object> object_;
 
  public:
   ~Component() override;
 
-  Object& getObject() const {
-    return object_;
+  ObjectPtr getObject() const {
+    return object_.lock();
   }
 
  protected:
-  Component(Object& object);
+  Component(const ObjectPtr& object);
 };
 /***********************************************************************//**
 	$Id$

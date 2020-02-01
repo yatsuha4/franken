@@ -4,8 +4,7 @@
 #pragma once
 
 #include "fk/framework/ContextHolder.hpp"
-#include "fk/framework/Updatable.hpp"
-#include "fk/render/Renderable.hpp"
+#include "fk/framework/Behaviour.hpp"
 
 namespace fk {
 namespace framework {
@@ -13,11 +12,12 @@ namespace framework {
 	@brief 
 ***************************************************************************/
 class Object
-  : public std::enable_shared_from_this<Object>, 
-    public Updatable, 
-    public Renderable, 
+  : public Behaviour, 
+    public std::enable_shared_from_this<Object>, 
     public ContextHolder<>
 {
+  using super = Behaviour;
+
  private:
   std::vector<ComponentPtr> components_;
   std::vector<ObjectPtr> children_;

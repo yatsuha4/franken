@@ -25,7 +25,7 @@ void Context::render(const RenderParam& param) {
   if(!renderer_) {
     renderer_ = createRenderer();
   }
-  Renderable::render(*renderer_, param);
+  super::render(*renderer_, param);
 }
 /***********************************************************************//**
 	@brief 
