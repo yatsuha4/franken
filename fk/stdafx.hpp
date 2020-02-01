@@ -29,6 +29,7 @@
 #define __WXOSX_COCOA__
 #endif
 #include "wx/wx.h"
+#include "wx/glcanvas.h"
 #endif
 /***********************************************************************//**
 	@brief マクロ

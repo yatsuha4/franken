@@ -13,6 +13,8 @@
 		268DB15523E5EC4B00F763F7 /* Behaviour.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB15223E5EC4B00F763F7 /* Behaviour.hpp */; };
 		268DB15623E5EC4B00F763F7 /* ContextHolder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB15323E5EC4B00F763F7 /* ContextHolder.hpp */; };
 		268DB15723E5EC4B00F763F7 /* Behaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB15423E5EC4B00F763F7 /* Behaviour.cpp */; };
+		268DB15A23E5F4AF00F763F7 /* Canvas.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB15823E5F4AF00F763F7 /* Canvas.hpp */; };
+		268DB15B23E5F4AF00F763F7 /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB15923E5F4AF00F763F7 /* Canvas.cpp */; };
 		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
 		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
 		26CA747C23DE0494007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746E23DE0494007AAD42 /* Component.cpp */; };
@@ -38,6 +40,8 @@
 		268DB15223E5EC4B00F763F7 /* Behaviour.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Behaviour.hpp; sourceTree = "<group>"; };
 		268DB15323E5EC4B00F763F7 /* ContextHolder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ContextHolder.hpp; sourceTree = "<group>"; };
 		268DB15423E5EC4B00F763F7 /* Behaviour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Behaviour.cpp; sourceTree = "<group>"; };
+		268DB15823E5F4AF00F763F7 /* Canvas.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Canvas.hpp; sourceTree = "<group>"; };
+		268DB15923E5F4AF00F763F7 /* Canvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Canvas.cpp; sourceTree = "<group>"; };
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746D23DE0494007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
@@ -136,8 +140,10 @@
 		26CA747523DE0494007AAD42 /* wx */ = {
 			isa = PBXGroup;
 			children = (
-				26CA747623DE0494007AAD42 /* Application.hpp */,
 				26CA747723DE0494007AAD42 /* Application.cpp */,
+				26CA747623DE0494007AAD42 /* Application.hpp */,
+				268DB15923E5F4AF00F763F7 /* Canvas.cpp */,
+				268DB15823E5F4AF00F763F7 /* Canvas.hpp */,
 			);
 			path = wx;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DB15A23E5F4AF00F763F7 /* Canvas.hpp in Headers */,
 				268DB15523E5EC4B00F763F7 /* Behaviour.hpp in Headers */,
 				26CA749523DF27CF007AAD42 /* Logger.hpp in Headers */,
 				26CA747E23DE0494007AAD42 /* Context.hpp in Headers */,
@@ -249,6 +256,7 @@
 				26CA747C23DE0494007AAD42 /* Component.cpp in Sources */,
 				26CA748323DE0494007AAD42 /* Application.cpp in Sources */,
 				268DB15723E5EC4B00F763F7 /* Behaviour.cpp in Sources */,
+				268DB15B23E5F4AF00F763F7 /* Canvas.cpp in Sources */,
 				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
 				26CA747B23DE0494007AAD42 /* Context.cpp in Sources */,
 			);
