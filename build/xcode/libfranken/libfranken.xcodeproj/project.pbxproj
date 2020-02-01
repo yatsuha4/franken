@@ -21,6 +21,12 @@
 		268DB12D23E5917200F763F7 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB12B23E5917200F763F7 /* Object.cpp */; };
 		268DB13123E592EF00F763F7 /* Outliner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB12F23E592EF00F763F7 /* Outliner.cpp */; };
 		268DB13223E592EF00F763F7 /* Outliner.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB13023E592EF00F763F7 /* Outliner.hpp */; };
+		268DB13623E59C6900F763F7 /* Inspector.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB13423E59C6900F763F7 /* Inspector.hpp */; };
+		268DB13723E59C6900F763F7 /* Inspector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB13523E59C6900F763F7 /* Inspector.cpp */; };
+		268DB14523E5A3BF00F763F7 /* Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB14123E5A3BE00F763F7 /* Property.cpp */; };
+		268DB14623E5A3BF00F763F7 /* Property.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14223E5A3BE00F763F7 /* Property.hpp */; };
+		268DB14723E5A3BF00F763F7 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB14323E5A3BF00F763F7 /* Component.cpp */; };
+		268DB14823E5A3BF00F763F7 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14423E5A3BF00F763F7 /* Component.hpp */; };
 		26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746023DE0273007AAD42 /* stdafx.hpp */; };
 		26CA746623DE0273007AAD42 /* franken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746123DE0273007AAD42 /* franken.hpp */; };
 		26CA748C23DE17CA007AAD42 /* AssetBrowser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748A23DE17CA007AAD42 /* AssetBrowser.hpp */; };
@@ -42,6 +48,12 @@
 		268DB12B23E5917200F763F7 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		268DB12F23E592EF00F763F7 /* Outliner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Outliner.cpp; sourceTree = "<group>"; };
 		268DB13023E592EF00F763F7 /* Outliner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Outliner.hpp; sourceTree = "<group>"; };
+		268DB13423E59C6900F763F7 /* Inspector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Inspector.hpp; sourceTree = "<group>"; };
+		268DB13523E59C6900F763F7 /* Inspector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Inspector.cpp; sourceTree = "<group>"; };
+		268DB14123E5A3BE00F763F7 /* Property.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Property.cpp; sourceTree = "<group>"; };
+		268DB14223E5A3BE00F763F7 /* Property.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Property.hpp; sourceTree = "<group>"; };
+		268DB14323E5A3BF00F763F7 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		268DB14423E5A3BF00F763F7 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
 		26CA73D523DDD6FC007AAD42 /* libfranken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfranken.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746023DE0273007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746123DE0273007AAD42 /* franken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = franken.hpp; sourceTree = "<group>"; };
@@ -67,6 +79,8 @@
 				268DB11223E4CA5400F763F7 /* Application.hpp */,
 				268DB11323E4CA5400F763F7 /* ColumnBrowser.cpp */,
 				268DB11623E4CA5400F763F7 /* ColumnBrowser.hpp */,
+				268DB14323E5A3BF00F763F7 /* Component.cpp */,
+				268DB14423E5A3BF00F763F7 /* Component.hpp */,
 				268DB12323E4CBB600F763F7 /* Config.cpp */,
 				268DB12223E4CBB600F763F7 /* Config.hpp */,
 				268DB12723E58BEE00F763F7 /* Context.cpp */,
@@ -75,6 +89,8 @@
 				268DB11723E4CA5400F763F7 /* MainFrame.hpp */,
 				268DB12B23E5917200F763F7 /* Object.cpp */,
 				268DB12A23E5917200F763F7 /* Object.hpp */,
+				268DB14123E5A3BE00F763F7 /* Property.cpp */,
+				268DB14223E5A3BE00F763F7 /* Property.hpp */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -86,6 +102,15 @@
 				268DB13023E592EF00F763F7 /* Outliner.hpp */,
 			);
 			path = outliner;
+			sourceTree = "<group>";
+		};
+		268DB13323E59C6900F763F7 /* inspector */ = {
+			isa = PBXGroup;
+			children = (
+				268DB13423E59C6900F763F7 /* Inspector.hpp */,
+				268DB13523E59C6900F763F7 /* Inspector.cpp */,
+			);
+			path = inspector;
 			sourceTree = "<group>";
 		};
 		26CA73CC23DDD6FC007AAD42 = {
@@ -109,6 +134,7 @@
 			children = (
 				26CA748923DE17CA007AAD42 /* asset */,
 				26CA746123DE0273007AAD42 /* franken.hpp */,
+				268DB13323E59C6900F763F7 /* inspector */,
 				268DB11123E4CA5400F763F7 /* main */,
 				268DB12E23E592EF00F763F7 /* outliner */,
 				26CA746023DE0273007AAD42 /* stdafx.hpp */,
@@ -133,8 +159,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DB13623E59C6900F763F7 /* Inspector.hpp in Headers */,
 				268DB12C23E5917200F763F7 /* Object.hpp in Headers */,
 				268DB11F23E4CA5400F763F7 /* MainFrame.hpp in Headers */,
+				268DB14623E5A3BF00F763F7 /* Property.hpp in Headers */,
 				26CA746623DE0273007AAD42 /* franken.hpp in Headers */,
 				268DB11E23E4CA5400F763F7 /* ColumnBrowser.hpp in Headers */,
 				268DB12423E4CBB600F763F7 /* Config.hpp in Headers */,
@@ -142,6 +170,7 @@
 				26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */,
 				268DB12823E58BEE00F763F7 /* Context.hpp in Headers */,
 				268DB13223E592EF00F763F7 /* Outliner.hpp in Headers */,
+				268DB14823E5A3BF00F763F7 /* Component.hpp in Headers */,
 				26CA748C23DE17CA007AAD42 /* AssetBrowser.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DB14523E5A3BF00F763F7 /* Property.cpp in Sources */,
 				268DB11C23E4CA5400F763F7 /* MainFrame.cpp in Sources */,
+				268DB14723E5A3BF00F763F7 /* Component.cpp in Sources */,
+				268DB13723E59C6900F763F7 /* Inspector.cpp in Sources */,
 				268DB12123E4CA5400F763F7 /* Application.cpp in Sources */,
 				268DB11B23E4CA5400F763F7 /* ColumnBrowser.cpp in Sources */,
 				268DB12923E58BEE00F763F7 /* Context.cpp in Sources */,
