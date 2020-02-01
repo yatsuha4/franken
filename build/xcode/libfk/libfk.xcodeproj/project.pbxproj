@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		268DB14D23E5D56B00F763F7 /* Renderer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14A23E5D56B00F763F7 /* Renderer.hpp */; };
+		268DB14E23E5D56B00F763F7 /* Renderable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14B23E5D56B00F763F7 /* Renderable.hpp */; };
+		268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB14C23E5D56B00F763F7 /* Renderer.cpp */; };
+		268DB15123E5D63D00F763F7 /* RenderParam.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB15023E5D63D00F763F7 /* RenderParam.hpp */; };
 		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
 		26CA747A23DE0494007AAD42 /* Updatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746C23DE0494007AAD42 /* Updatable.cpp */; };
 		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		268DB14A23E5D56B00F763F7 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		268DB14B23E5D56B00F763F7 /* Renderable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderable.hpp; sourceTree = "<group>"; };
+		268DB14C23E5D56B00F763F7 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		268DB15023E5D63D00F763F7 /* RenderParam.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderParam.hpp; sourceTree = "<group>"; };
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746C23DE0494007AAD42 /* Updatable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Updatable.cpp; sourceTree = "<group>"; };
@@ -60,6 +68,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		268DB14923E5D56B00F763F7 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				268DB14B23E5D56B00F763F7 /* Renderable.hpp */,
+				268DB14C23E5D56B00F763F7 /* Renderer.cpp */,
+				268DB14A23E5D56B00F763F7 /* Renderer.hpp */,
+				268DB15023E5D63D00F763F7 /* RenderParam.hpp */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
 		26CA739D23DDA44E007AAD42 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 				26CA747823DE0494007AAD42 /* fk.hpp */,
 				26CA746B23DE0494007AAD42 /* framework */,
 				26CA747423DE0494007AAD42 /* platform */,
+				268DB14923E5D56B00F763F7 /* render */,
 				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
 				26CA749B23DF2CF2007AAD42 /* util */,
 			);
@@ -157,7 +177,10 @@
 				26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */,
 				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
 				26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */,
+				268DB14E23E5D56B00F763F7 /* Renderable.hpp in Headers */,
+				268DB14D23E5D56B00F763F7 /* Renderer.hpp in Headers */,
 				26CA748023DE0494007AAD42 /* Object.hpp in Headers */,
+				268DB15123E5D63D00F763F7 /* RenderParam.hpp in Headers */,
 				26CA748223DE0494007AAD42 /* Application.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */,
 				26CA747A23DE0494007AAD42 /* Updatable.cpp in Sources */,
 				26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */,
 				26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */,
