@@ -15,6 +15,7 @@
 
 #if defined(FK_WITH_WX)
 #include "fk/platform/wx/Application.hpp"
+#include "fk/platform/wx/Canvas.hpp"
 #endif
 /***********************************************************************//**
 	$Id$

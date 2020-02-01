@@ -24,6 +24,7 @@ Canvas::Canvas(wxWindow* parent,
     glContext_(this, nullptr, &contextAttrs), 
     timer_(this)
 {
+  Bind(wxEVT_PAINT, &Canvas::onPaint, this);
 }
 /***********************************************************************//**
 	@brief デストラクタ
@@ -42,13 +43,13 @@ void Canvas::start(float fps) {
   else {
     Bind(wxEVT_IDLE, &Canvas::onIdle, this);
   }
-  flag_.set(static_cast<size_t>(Flag::Start));
+  flag_.set(size_t(Flag::Start));
 }
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
 void Canvas::stop() {
-  if(flag_.test(static_cast<size_t>(Flag::Start))) {
+  if(flag_.test(size_t(Flag::Start))) {
     if(timer_.IsRunning()) {
       timer_.Stop();
       Unbind(wxEVT_TIMER, &Canvas::onTimer, this);
@@ -56,7 +57,7 @@ void Canvas::stop() {
     else {
       Unbind(wxEVT_IDLE, &Canvas::onIdle, this);
     }
-    flag_.reset(static_cast<size_t>(Flag::Start));
+    flag_.reset(size_t(Flag::Start));
   }
 }
 /***********************************************************************//**
@@ -91,7 +92,7 @@ void Canvas::onTimer(wxTimerEvent& event) {
 void Canvas::onPaint(wxPaintEvent& event) {
   wxPaintDC dc(this);
   SetCurrent(glContext_);
-  const auto& size = GetClientSize();
+  auto size = GetClientSize() * GetContentScaleFactor();
   render(IRect(glm::ivec2(0), glm::ivec2(size.x, size.y)));
   SwapBuffers();
 }

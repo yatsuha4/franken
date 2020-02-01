@@ -4,29 +4,22 @@
 #pragma once
 
 namespace franken {
-namespace main {
+namespace gui {
 /***********************************************************************//**
-	@brief メインフレーム
+	@brief 
 ***************************************************************************/
-class MainFrame
-  : public wxFrame, 
-    public ContextHolder
+class Canvas
+  : public fk::wx::Canvas
 {
-  using super = wxFrame;
-
- private:
-  wxAuiManager auiManager_;
-  Canvas* canvas_;
-  Outliner* outliner_;
-  Inspector* inspector_;
-  AssetBrowser* assetBrowser_;
+  using super = fk::wx::Canvas;
 
  public:
-  MainFrame(const ContextPtr& context);
-  ~MainFrame() override;
+  Canvas(wxWindow* parent, const ContextPtr& context);
+  ~Canvas() override;
 
  private:
-  wxAuiNotebook* createNotebook();
+  static wxGLAttributes GetAttrs();
+  static wxGLContextAttrs GetContextAttrs();
 };
 /***********************************************************************//**
 	$Id$

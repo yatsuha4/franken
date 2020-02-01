@@ -23,6 +23,10 @@ class Context
 
   FK_GETTER(Application, application_);
   FK_ACCESSOR(Config, config_);
+
+ protected:
+  void onRender(fk::Renderer& renderer, 
+                const fk::RenderParam& param) override;
 };
 /***********************************************************************//**
 	$Id$

@@ -116,6 +116,10 @@ namespace math {
 }
 using namespace math;
 
+namespace platform {
+}
+using namespace platform;
+
 namespace render {
 FK_DECLARE_CLASS(RenderParam);
 FK_DECLARE_CLASS(Renderer);

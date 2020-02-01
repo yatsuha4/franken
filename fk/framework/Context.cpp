@@ -25,7 +25,9 @@ void Context::render(const IRect& viewport, const RenderParam& param) {
   if(!renderer_) {
     renderer_ = createRenderer();
   }
+  renderer_->beginRender(viewport);
   super::render(*renderer_, param);
+  renderer_->endRender();
 }
 /***********************************************************************//**
 	@brief 

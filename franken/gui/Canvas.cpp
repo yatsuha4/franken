@@ -1,30 +1,38 @@
 ﻿/***********************************************************************//**
 	@file
 ***************************************************************************/
+#include "franken/gui/Canvas.hpp"
 #include "franken/main/Context.hpp"
 
 namespace franken {
-namespace main {
+namespace gui {
 /***********************************************************************//**
 	@brief コンストラクタ
-        @param[in] application アプリケーション
 ***************************************************************************/
-Context::Context(Application* application)
-  : application_(application)
+Canvas::Canvas(wxWindow* parent, const ContextPtr& context)
+  : super(parent, GetAttrs(), GetContextAttrs(), context)
 {
 }
 /***********************************************************************//**
 	@brief デストラクタ
 ***************************************************************************/
-Context::~Context() {
+Canvas::~Canvas() {
 }
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-void Context::onRender(fk::Renderer& renderer, 
-                       const fk::RenderParam& param) {
-  renderer.clear(fk::Renderer::CLEAR_ALL, glm::vec4(0.5f, 0.5f, 0.5f, 0.0f));
-  super::onRender(renderer, param);
+wxGLAttributes Canvas::GetAttrs() {
+  wxGLAttributes attrs;
+  attrs.Defaults().EndList();
+  return attrs;
+}
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
+wxGLContextAttrs Canvas::GetContextAttrs() {
+  wxGLContextAttrs attrs;
+  attrs.CompatibilityProfile().EndList();
+  return attrs;
 }
 /***********************************************************************//**
 	$Id$

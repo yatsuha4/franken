@@ -24,6 +24,7 @@ class Renderer
 
  private:
   GLint defaultFrameBuffer_;
+  IRect viewport_;
 
  public:
   Renderer(const ContextPtr& context);
@@ -31,6 +32,9 @@ class Renderer
 
   void beginRender(const IRect& viewport);
   void endRender();
+
+  void setViewport(const IRect& viewport);
+  FK_GETTER(Viewport, viewport_);
 
   void clear(ClearFlag flag = CLEAR_ALL, 
              const glm::vec4& color = glm::vec4(0));

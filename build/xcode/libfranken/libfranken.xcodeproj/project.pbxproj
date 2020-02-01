@@ -27,6 +27,8 @@
 		268DB14623E5A3BF00F763F7 /* Property.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14223E5A3BE00F763F7 /* Property.hpp */; };
 		268DB14723E5A3BF00F763F7 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB14323E5A3BF00F763F7 /* Component.cpp */; };
 		268DB14823E5A3BF00F763F7 /* Component.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14423E5A3BF00F763F7 /* Component.hpp */; };
+		268DB16323E6200600F763F7 /* Canvas.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB16223E6200600F763F7 /* Canvas.hpp */; };
+		268DB16523E6215F00F763F7 /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB16423E6215F00F763F7 /* Canvas.cpp */; };
 		26CA746523DE0273007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746023DE0273007AAD42 /* stdafx.hpp */; };
 		26CA746623DE0273007AAD42 /* franken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746123DE0273007AAD42 /* franken.hpp */; };
 		26CA748C23DE17CA007AAD42 /* AssetBrowser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748A23DE17CA007AAD42 /* AssetBrowser.hpp */; };
@@ -54,6 +56,8 @@
 		268DB14223E5A3BE00F763F7 /* Property.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Property.hpp; sourceTree = "<group>"; };
 		268DB14323E5A3BF00F763F7 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
 		268DB14423E5A3BF00F763F7 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+		268DB16223E6200600F763F7 /* Canvas.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Canvas.hpp; sourceTree = "<group>"; };
+		268DB16423E6215F00F763F7 /* Canvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Canvas.cpp; sourceTree = "<group>"; };
 		26CA73D523DDD6FC007AAD42 /* libfranken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfranken.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746023DE0273007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746123DE0273007AAD42 /* franken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = franken.hpp; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 			path = inspector;
 			sourceTree = "<group>";
 		};
+		268DB16123E6200600F763F7 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				268DB16423E6215F00F763F7 /* Canvas.cpp */,
+				268DB16223E6200600F763F7 /* Canvas.hpp */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
 		26CA73CC23DDD6FC007AAD42 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,7 @@
 			children = (
 				26CA748923DE17CA007AAD42 /* asset */,
 				26CA746123DE0273007AAD42 /* franken.hpp */,
+				268DB16123E6200600F763F7 /* gui */,
 				268DB13323E59C6900F763F7 /* inspector */,
 				268DB11123E4CA5400F763F7 /* main */,
 				268DB12E23E592EF00F763F7 /* outliner */,
@@ -159,6 +173,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268DB16323E6200600F763F7 /* Canvas.hpp in Headers */,
 				268DB13623E59C6900F763F7 /* Inspector.hpp in Headers */,
 				268DB12C23E5917200F763F7 /* Object.hpp in Headers */,
 				268DB11F23E4CA5400F763F7 /* MainFrame.hpp in Headers */,
@@ -243,6 +258,7 @@
 				268DB12523E4CBB600F763F7 /* Config.cpp in Sources */,
 				26CA748D23DE17CA007AAD42 /* AssetBrowser.cpp in Sources */,
 				268DB13123E592EF00F763F7 /* Outliner.cpp in Sources */,
+				268DB16523E6215F00F763F7 /* Canvas.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

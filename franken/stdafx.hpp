@@ -22,6 +22,11 @@ FK_DECLARE_CLASS(AssetBrowser);
 }
 using namespace asset;
 
+namespace gui {
+FK_DECLARE_CLASS(Canvas);
+}
+using namespace gui;
+
 namespace inspector {
 FK_DECLARE_CLASS(Inspector);
 }

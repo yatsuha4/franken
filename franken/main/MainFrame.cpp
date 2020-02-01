@@ -2,6 +2,7 @@
 	@file
 ***************************************************************************/
 #include "franken/asset/AssetBrowser.hpp"
+#include "franken/gui/Canvas.hpp"
 #include "franken/inspector/Inspector.hpp"
 #include "franken/main/MainFrame.hpp"
 #include "franken/outliner/Outliner.hpp"
@@ -20,6 +21,15 @@ MainFrame::MainFrame(const ContextPtr& context)
     ContextHolder(context), 
     auiManager_(this)
 {
+  {
+    auto notebook = createNotebook();
+    canvas_ = new Canvas(notebook, context);
+    notebook->AddPage(canvas_, "Canvas");
+    auiManager_.AddPane(notebook, 
+                        wxAuiPaneInfo().
+                        CaptionVisible(false).
+                        Center());
+  }
   {
     auto notebook = createNotebook();
     outliner_ = new Outliner(notebook, context);

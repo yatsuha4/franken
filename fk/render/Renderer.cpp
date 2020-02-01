@@ -23,11 +23,23 @@ Renderer::~Renderer() {
 	@brief 
 ***************************************************************************/
 void Renderer::beginRender(const IRect& viewport) {
+  setViewport(viewport);
 }
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
 void Renderer::endRender() {
+  checkError();
+}
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
+void Renderer::setViewport(const IRect& viewport) {
+  viewport_ = viewport;
+  glViewport(viewport.getPos().x, 
+             viewport.getPos().y, 
+             viewport.getSize().x, 
+             viewport.getSize().y);
 }
 /***********************************************************************//**
 	@brief 
