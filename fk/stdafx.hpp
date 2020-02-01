@@ -2,16 +2,14 @@
 	@file
 ***************************************************************************/
 #if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)
-#define FK_PLATFORM "mac"
-#define FK_PLATFORM_MAC
-#define FK_PLATFORM_APPLE
-#define FK_PLATFORM_POSIX
-#define FK_WITH_WX
-#define FK_WITH_GL
-#define GL_SILENCE_DEPRECATION
-
+#  define FK_PLATFORM "mac"
+#  define FK_PLATFORM_MAC
+#  define FK_PLATFORM_APPLE
+#  define FK_PLATFORM_POSIX
+#  define FK_WITH_WX
+#  define FK_WITH_GL
 #else
-#error "not support platform"
+#  error "not support platform"
 #endif
 /***********************************************************************//**
 	@brief 
@@ -20,17 +18,29 @@
 #include <vector>
 #include <sstream>
 /***********************************************************************//**
+	@brief OpenGL
+***************************************************************************/
+#if defined(FK_WITH_GL)
+#  if defined(FK_PLATFORM_MAC)
+#    define GL_SILENCE_DEPRECATION
+#    define GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED
+#    include <OpenGL/gl3.h>
+#  endif
+#endif
+/***********************************************************************//**
 	@brief wxWidgets
 ***************************************************************************/
 #if defined(FK_WITH_WX)
-#if defined(FK_PLATFORM_MAC)
-#define _FILE_OFFSET_BITS 64
-#define __WXMAC__
-#define __WXOSX__
-#define __WXOSX_COCOA__
-#endif
-#include "wx/wx.h"
-#include "wx/glcanvas.h"
+#  if defined(FK_PLATFORM_MAC)
+#    define _FILE_OFFSET_BITS 64
+#    define __WXMAC__
+#    define __WXOSX__
+#    define __WXOSX_COCOA__
+#  endif
+#  include "wx/wx.h"
+#  if defined(FK_WITH_GL)
+#    include "wx/glcanvas.h"
+#  endif
 #endif
 /***********************************************************************//**
 	@brief GLM
