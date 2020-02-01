@@ -13,7 +13,7 @@ class Logger {
   enum class Level {
     Debug, 
     Info, 
-    Warn, 
+    Warning, 
     Error, 
     Fatal
   };

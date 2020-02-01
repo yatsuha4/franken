@@ -4,6 +4,7 @@
 #pragma once
 
 #include "fk/framework/ContextHolder.hpp"
+#include "fk/math/Rect.hpp"
 
 namespace fk {
 namespace platform {
@@ -40,7 +41,7 @@ class Canvas
 
  protected:
   virtual void update();
-  virtual void render();
+  virtual void render(const IRect& viewport);
 
  private:
   void onIdle(wxIdleEvent& event);

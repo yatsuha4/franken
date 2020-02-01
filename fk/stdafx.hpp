@@ -8,6 +8,7 @@
 #define FK_PLATFORM_POSIX
 #define FK_WITH_WX
 #define FK_WITH_GL
+#define GL_SILENCE_DEPRECATION
 
 #else
 #error "not support platform"
@@ -31,6 +32,10 @@
 #include "wx/wx.h"
 #include "wx/glcanvas.h"
 #endif
+/***********************************************************************//**
+	@brief GLM
+***************************************************************************/
+#include "glm/glm.hpp"
 /***********************************************************************//**
 	@brief マクロ
 ***************************************************************************/
@@ -106,6 +111,10 @@ FK_DECLARE_CLASS(Context);
 FK_DECLARE_CLASS(Object);
 }
 using namespace framework;
+
+namespace math {
+}
+using namespace math;
 
 namespace render {
 FK_DECLARE_CLASS(RenderParam);

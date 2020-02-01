@@ -12,13 +12,13 @@ void Logger::log(Level level, const std::string& message) {
   static const char* LEVELS[] = {
     "DEBUG", 
     "INFO", 
-    "WARN", 
+    "WARNING", 
     "ERROR", 
     "FATAL"
   };
   if(level >= level_) {
     std::stringstream stream;
-    stream << "[" << LEVELS[static_cast<int>(level)] << "]" << message;
+    stream << "[" << LEVELS[size_t(level)] << "]" << message;
     {
       std::lock_guard<std::mutex> lock(mutex_);
       onLog(stream.str());

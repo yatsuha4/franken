@@ -4,6 +4,7 @@
 #pragma once
 
 #include "fk/framework/Object.hpp"
+#include "fk/math/Rect.hpp"
 
 namespace fk {
 namespace framework {
@@ -22,7 +23,7 @@ class Context
   Context();
   ~Context() override;
 
-  void render(const RenderParam& param);
+  void render(const IRect& viewport, const RenderParam& param);
 
  protected:
   virtual RendererPtr createRenderer();

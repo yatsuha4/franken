@@ -10,7 +10,9 @@
 ***************************************************************************/
 #if !defined(FK_MASTER)
 #define FK_LOG(level, ...)                                              \
-  ::fk::Debug::Log(level, ::fk::String::Format(__VA_ARGS__).c_str(), __FILE__, __LINE__)
+  ::fk::Debug::Log(level,                                               \
+                   ::fk::util::String::Format(__VA_ARGS__).c_str(),     \
+                   __FILE__, __LINE__)
 #else
 #define FK_LOG(...)
 #endif

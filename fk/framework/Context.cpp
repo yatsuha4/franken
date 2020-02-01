@@ -21,7 +21,7 @@ Context::~Context() {
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-void Context::render(const RenderParam& param) {
+void Context::render(const IRect& viewport, const RenderParam& param) {
   if(!renderer_) {
     renderer_ = createRenderer();
   }

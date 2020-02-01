@@ -69,8 +69,8 @@ void Canvas::update() {
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-void Canvas::render() {
-  getContext()->render(RenderParam());
+void Canvas::render(const IRect& viewport) {
+  getContext()->render(viewport, RenderParam());
 }
 /***********************************************************************//**
 	@brief 
@@ -92,7 +92,7 @@ void Canvas::onPaint(wxPaintEvent& event) {
   wxPaintDC dc(this);
   SetCurrent(glContext_);
   const auto& size = GetClientSize();
-  render();
+  render(IRect(glm::ivec2(0), glm::ivec2(size.x, size.y)));
   SwapBuffers();
 }
 /***********************************************************************//**

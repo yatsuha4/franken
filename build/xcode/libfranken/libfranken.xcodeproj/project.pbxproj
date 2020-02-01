@@ -305,6 +305,7 @@
 					"$(PROJECT_DIR)/../../..",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+					"$(PROJECT_DIR)/../../../external/src/glm",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -364,6 +365,7 @@
 					"$(PROJECT_DIR)/../../..",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+					"$(PROJECT_DIR)/../../../external/src/glm",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;

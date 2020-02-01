@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		268DB16023E6044E00F763F7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268DB15F23E6044E00F763F7 /* OpenGL.framework */; };
 		26CA743223DDE0BF007AAD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CA743123DDE0BF007AAD42 /* Assets.xcassets */; };
 		26CA743523DDE0BF007AAD42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CA743323DDE0BF007AAD42 /* MainMenu.xib */; };
 		26CA744023DDE213007AAD42 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA743F23DDE213007AAD42 /* main.cpp */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		268DB15F23E6044E00F763F7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		26CA742B23DDE0BA007AAD42 /* franken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = franken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA743123DDE0BF007AAD42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26CA743423DDE0BF007AAD42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -54,20 +56,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA745E23DDE513007AAD42 /* libiconv.tbd in Frameworks */,
-				26CA745C23DDE509007AAD42 /* libz.tbd in Frameworks */,
+				26CA744423DDE377007AAD42 /* libfk.a in Frameworks */,
+				26CA744623DDE377007AAD42 /* libfranken.a in Frameworks */,
+				26CA745023DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a in Frameworks */,
+				26CA745223DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a in Frameworks */,
+				26CA744F23DDE38C007AAD42 /* libwxjpeg-3.1.a in Frameworks */,
+				26CA745123DDE38C007AAD42 /* libwxpng-3.1.a in Frameworks */,
+				26CA745423DDE38C007AAD42 /* libwxregexu-3.1.a in Frameworks */,
+				26CA745323DDE38C007AAD42 /* libwxscintilla-3.1.a in Frameworks */,
+				26CA744E23DDE38C007AAD42 /* libwxtiff-3.1.a in Frameworks */,
 				26CA745A23DDE4F9007AAD42 /* Carbon.framework in Frameworks */,
 				26CA745823DDE4F2007AAD42 /* Cocoa.framework in Frameworks */,
 				26CA745623DDE4EC007AAD42 /* IOKit.framework in Frameworks */,
-				26CA744E23DDE38C007AAD42 /* libwxtiff-3.1.a in Frameworks */,
-				26CA744F23DDE38C007AAD42 /* libwxjpeg-3.1.a in Frameworks */,
-				26CA745023DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a in Frameworks */,
-				26CA745123DDE38C007AAD42 /* libwxpng-3.1.a in Frameworks */,
-				26CA745223DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a in Frameworks */,
-				26CA745323DDE38C007AAD42 /* libwxscintilla-3.1.a in Frameworks */,
-				26CA745423DDE38C007AAD42 /* libwxregexu-3.1.a in Frameworks */,
-				26CA744423DDE377007AAD42 /* libfk.a in Frameworks */,
-				26CA744623DDE377007AAD42 /* libfranken.a in Frameworks */,
+				268DB16023E6044E00F763F7 /* OpenGL.framework in Frameworks */,
+				26CA745E23DDE513007AAD42 /* libiconv.tbd in Frameworks */,
+				26CA745C23DDE509007AAD42 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,11 +109,8 @@
 		26CA744223DDE377007AAD42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26CA745D23DDE513007AAD42 /* libiconv.tbd */,
-				26CA745B23DDE509007AAD42 /* libz.tbd */,
-				26CA745923DDE4F9007AAD42 /* Carbon.framework */,
-				26CA745723DDE4F2007AAD42 /* Cocoa.framework */,
-				26CA745523DDE4EC007AAD42 /* IOKit.framework */,
+				26CA744323DDE377007AAD42 /* libfk.a */,
+				26CA744523DDE377007AAD42 /* libfranken.a */,
 				26CA744923DDE38C007AAD42 /* libwx_osx_cocoau_gl-3.1.a */,
 				26CA744B23DDE38C007AAD42 /* libwx_osx_cocoau-3.1.a */,
 				26CA744823DDE38C007AAD42 /* libwxjpeg-3.1.a */,
@@ -118,8 +118,12 @@
 				26CA744D23DDE38C007AAD42 /* libwxregexu-3.1.a */,
 				26CA744C23DDE38C007AAD42 /* libwxscintilla-3.1.a */,
 				26CA744723DDE38C007AAD42 /* libwxtiff-3.1.a */,
-				26CA744323DDE377007AAD42 /* libfk.a */,
-				26CA744523DDE377007AAD42 /* libfranken.a */,
+				26CA745923DDE4F9007AAD42 /* Carbon.framework */,
+				26CA745723DDE4F2007AAD42 /* Cocoa.framework */,
+				26CA745523DDE4EC007AAD42 /* IOKit.framework */,
+				268DB15F23E6044E00F763F7 /* OpenGL.framework */,
+				26CA745D23DDE513007AAD42 /* libiconv.tbd */,
+				26CA745B23DDE509007AAD42 /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,6 +269,7 @@
 					"$(PROJECT_DIR)/../../..",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+					"$(PROJECT_DIR)/../../../external/src/glm",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
@@ -323,6 +328,7 @@
 					"$(PROJECT_DIR)/../../..",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+					"$(PROJECT_DIR)/../../../external/src/glm",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;

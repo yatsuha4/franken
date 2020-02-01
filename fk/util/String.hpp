@@ -10,6 +10,10 @@ namespace util {
 ***************************************************************************/
 class String {
  public:
+  static std::string Format(const char* text) {
+    return std::string(text);
+  }
+
   template <class... Args>
   static std::string Format(const char* format, const Args&... args) {
     std::vector<char> buffer(128);
