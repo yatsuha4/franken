@@ -14,6 +14,7 @@
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
+#include <array>
 #include <memory>
 #include <vector>
 #include <sstream>
@@ -70,30 +71,30 @@
   FK_SETTER(name, var);                         \
   FK_REFER(name, var);
 
-#define FK_BIT_SETTER(name, var, index)                                 \
-  auto set##name(bool value) -> decltype(*this)& {                      \
-                                                  var.set(index, value); \
-                                                  return *this;         \
+#define FK_BIT_SETTER(name, var, index)                 \
+  auto set##name(bool value) -> decltype(*this)& {      \
+    var.set(static_cast<size_t>(index), value);         \
+    return *this;                                       \
   }
 
-#define FK_BIT_GETTER(name, var, index)         \
-  bool is##name() const {                       \
-    return var.test(index);                     \
+#define FK_BIT_GETTER(name, var, index)                 \
+  bool is##name() const {                               \
+    return var.test(static_cast<size_t>(index));        \
   }
 
 #define FK_BIT_ACCESSOR(name, var, index)       \
   FK_BIT_SETTER(name, var, index);              \
   FK_BIT_GETTER(name, var, index)
 
-#define FK_CAN_SETTER(name, var, index)                                 \
-  auto setCan##name(bool value) -> decltype(*this)& {                   \
-                                                     var.set(index, value); \
-                                                     return *this;      \
+#define FK_CAN_SETTER(name, var, index)                 \
+  auto setCan##name(bool value) -> decltype(*this)& {   \
+    var.set(static_cast<size_t>(index), value);         \
+    return *this;                                       \
   }
 
-#define FK_CAN_GETTER(name, var, index)         \
-  bool can##name() const {                      \
-    return var.test(index);                     \
+#define FK_CAN_GETTER(name, var, index)                 \
+  bool can##name() const {                              \
+    return var.test(static_cast<size_t>(index));        \
   }
 
 #define FK_CAN_ACCESSOR(name, var, index)       \
@@ -133,6 +134,8 @@ using namespace platform;
 namespace render {
 FK_DECLARE_CLASS(RenderParam);
 FK_DECLARE_CLASS(Renderer);
+FK_DECLARE_CLASS(Shader);
+FK_DECLARE_CLASS(ShaderProgram);
 }
 using namespace render;
 
