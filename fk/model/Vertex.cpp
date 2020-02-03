@@ -2,6 +2,7 @@
 	@file
 ***************************************************************************/
 #include "fk/model/Vertex.hpp"
+#include "fk/render/Shader.hpp"
 
 namespace fk {
 namespace model {
@@ -42,6 +43,26 @@ bool Vertex::operator==(const Vertex& rhs) const {
           color_ == rhs.color_ && 
           matrixIndexes_ == rhs.matrixIndexes_ && 
           matrixWeights_ == rhs.matrixWeights_);
+}
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
+#define ENABLE_ATTRIB(attrib, member, size, type, normalized)   \
+  glEnableVertexAttribArray(static_cast<GLuint>(attrib));       \
+  glVertexAttribPointer(static_cast<GLuint>(attrib),            \
+                        size, type, normalized, sizeof(Vertex), \
+                        reinterpret_cast<const GLvoid*>         \
+                        (offsetof(Vertex, member)))
+
+void Vertex::EnableAttrib() {
+  ENABLE_ATTRIB(Shader::Attrib::Pos, pos_, 3, GL_FLOAT, GL_FALSE);
+  ENABLE_ATTRIB(Shader::Attrib::Uv, uv_, 2, GL_FLOAT, GL_FALSE);
+  ENABLE_ATTRIB(Shader::Attrib::Normal, normal_, 4, GL_BYTE, GL_TRUE);
+  ENABLE_ATTRIB(Shader::Attrib::Color, color_, 4, GL_UNSIGNED_BYTE, GL_TRUE);
+  ENABLE_ATTRIB(Shader::Attrib::MatrixIndexes, matrixIndexes_, 4, 
+                GL_UNSIGNED_BYTE, GL_FALSE);
+  ENABLE_ATTRIB(Shader::Attrib::MatrixWeights, matrixWeights_, 4, 
+                GL_UNSIGNED_BYTE, GL_TRUE);
 }
 /***********************************************************************//**
 	$Id$

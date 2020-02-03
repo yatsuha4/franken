@@ -50,6 +50,7 @@ void Geometry::onRender(Renderer& renderer, const RenderParam& param) {
                  buffers_[static_cast<size_t>(Buffer::Vertex)]);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 
                  buffers_[static_cast<size_t>(Buffer::Index)]);
+    Vertex::EnableAttrib();
     glDrawElements(GetMode(mode_), indexNum_, GL_UNSIGNED_SHORT, 0);
   }
 }

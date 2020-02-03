@@ -48,6 +48,8 @@ class Vertex {
   Vertex& appendWeight(size_t index, float weight);
 
   bool operator==(const Vertex& rhs) const;
+
+  static void EnableAttrib();
 };
 /***********************************************************************//**
 	$Id$
