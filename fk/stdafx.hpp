@@ -128,6 +128,12 @@ namespace math {
 }
 using namespace math;
 
+namespace model {
+FK_DECLARE_CLASS(Geometry);
+FK_DECLARE_CLASS(Vertex);
+}
+using namespace model;
+
 namespace platform {
 }
 using namespace platform;

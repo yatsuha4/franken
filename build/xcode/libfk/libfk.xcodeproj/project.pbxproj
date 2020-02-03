@@ -22,6 +22,10 @@
 		268E802D23E79018005AB338 /* ShaderProgram.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E802B23E79018005AB338 /* ShaderProgram.hpp */; };
 		268E803023E8BA02005AB338 /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E802E23E8BA02005AB338 /* Renderable.cpp */; };
 		268E803123E8BA02005AB338 /* Renderable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E802F23E8BA02005AB338 /* Renderable.hpp */; };
+		268E803523E8BD1F005AB338 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803323E8BD1E005AB338 /* Geometry.cpp */; };
+		268E803623E8BD1F005AB338 /* Geometry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E803423E8BD1E005AB338 /* Geometry.hpp */; };
+		268E803923E8C30B005AB338 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803723E8C30A005AB338 /* Vertex.cpp */; };
+		268E803A23E8C30B005AB338 /* Vertex.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E803823E8C30B005AB338 /* Vertex.hpp */; };
 		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
 		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
 		26CA747C23DE0494007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746E23DE0494007AAD42 /* Component.cpp */; };
@@ -56,6 +60,10 @@
 		268E802B23E79018005AB338 /* ShaderProgram.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShaderProgram.hpp; sourceTree = "<group>"; };
 		268E802E23E8BA02005AB338 /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		268E802F23E8BA02005AB338 /* Renderable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderable.hpp; sourceTree = "<group>"; };
+		268E803323E8BD1E005AB338 /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		268E803423E8BD1E005AB338 /* Geometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geometry.hpp; sourceTree = "<group>"; };
+		268E803723E8C30A005AB338 /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
+		268E803823E8C30B005AB338 /* Vertex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vertex.hpp; sourceTree = "<group>"; };
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746D23DE0494007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
@@ -110,6 +118,17 @@
 			path = math;
 			sourceTree = "<group>";
 		};
+		268E803223E8BD1E005AB338 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				268E803323E8BD1E005AB338 /* Geometry.cpp */,
+				268E803423E8BD1E005AB338 /* Geometry.hpp */,
+				268E803723E8C30A005AB338 /* Vertex.cpp */,
+				268E803823E8C30B005AB338 /* Vertex.hpp */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		26CA739D23DDA44E007AAD42 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +152,7 @@
 				26CA747823DE0494007AAD42 /* fk.hpp */,
 				26CA746B23DE0494007AAD42 /* framework */,
 				268DB15C23E5FAFC00F763F7 /* math */,
+				268E803223E8BD1E005AB338 /* model */,
 				26CA747423DE0494007AAD42 /* platform */,
 				268DB14923E5D56B00F763F7 /* render */,
 				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
@@ -210,10 +230,12 @@
 				26CA747E23DE0494007AAD42 /* Context.hpp in Headers */,
 				268DB15E23E5FAFC00F763F7 /* Rect.hpp in Headers */,
 				26CA747F23DE0494007AAD42 /* Component.hpp in Headers */,
+				268E803A23E8C30B005AB338 /* Vertex.hpp in Headers */,
 				26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */,
 				268DB16823E640C800F763F7 /* Shader.hpp in Headers */,
 				268E803123E8BA02005AB338 /* Renderable.hpp in Headers */,
 				268E802D23E79018005AB338 /* ShaderProgram.hpp in Headers */,
+				268E803623E8BD1F005AB338 /* Geometry.hpp in Headers */,
 				26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */,
 				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
 				26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */,
@@ -288,11 +310,13 @@
 				26CA749923DF2A70007AAD42 /* Debug.cpp in Sources */,
 				26CA747C23DE0494007AAD42 /* Component.cpp in Sources */,
 				26CA748323DE0494007AAD42 /* Application.cpp in Sources */,
+				268E803923E8C30B005AB338 /* Vertex.cpp in Sources */,
 				268DB15723E5EC4B00F763F7 /* Behaviour.cpp in Sources */,
 				268DB16923E640C800F763F7 /* Shader.cpp in Sources */,
 				268DB15B23E5F4AF00F763F7 /* Canvas.cpp in Sources */,
 				268E802C23E79018005AB338 /* ShaderProgram.cpp in Sources */,
 				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
+				268E803523E8BD1F005AB338 /* Geometry.cpp in Sources */,
 				268E803023E8BA02005AB338 /* Renderable.cpp in Sources */,
 				26CA747B23DE0494007AAD42 /* Context.cpp in Sources */,
 			);
