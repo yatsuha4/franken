@@ -29,6 +29,8 @@
 		268E803D23E8CEE7005AB338 /* Material.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E803B23E8CEE7005AB338 /* Material.hpp */; };
 		268E803E23E8CEE7005AB338 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803C23E8CEE7005AB338 /* Material.cpp */; };
 		268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803F23E8D1F7005AB338 /* RenderParam.cpp */; };
+		268E804423E8D9A4005AB338 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E804223E8D9A4005AB338 /* Camera.cpp */; };
+		268E804523E8D9A4005AB338 /* Camera.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E804323E8D9A4005AB338 /* Camera.hpp */; };
 		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
 		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
 		26CA747C23DE0494007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746E23DE0494007AAD42 /* Component.cpp */; };
@@ -70,6 +72,8 @@
 		268E803B23E8CEE7005AB338 /* Material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Material.hpp; sourceTree = "<group>"; };
 		268E803C23E8CEE7005AB338 /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
 		268E803F23E8D1F7005AB338 /* RenderParam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderParam.cpp; sourceTree = "<group>"; };
+		268E804223E8D9A4005AB338 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		268E804323E8D9A4005AB338 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746D23DE0494007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
@@ -138,6 +142,15 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		268E804123E8D9A4005AB338 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				268E804223E8D9A4005AB338 /* Camera.cpp */,
+				268E804323E8D9A4005AB338 /* Camera.hpp */,
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
 		26CA739D23DDA44E007AAD42 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +170,7 @@
 		26CA746923DE0494007AAD42 /* fk */ = {
 			isa = PBXGroup;
 			children = (
+				268E804123E8D9A4005AB338 /* camera */,
 				26CA749223DF27CF007AAD42 /* debug */,
 				26CA747823DE0494007AAD42 /* fk.hpp */,
 				26CA746B23DE0494007AAD42 /* framework */,
@@ -254,6 +268,7 @@
 				268DB15123E5D63D00F763F7 /* RenderParam.hpp in Headers */,
 				26CA748223DE0494007AAD42 /* Application.hpp in Headers */,
 				268DB15623E5EC4B00F763F7 /* ContextHolder.hpp in Headers */,
+				268E804523E8D9A4005AB338 /* Camera.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +333,7 @@
 				268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */,
 				26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */,
 				26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */,
+				268E804423E8D9A4005AB338 /* Camera.cpp in Sources */,
 				26CA749923DF2A70007AAD42 /* Debug.cpp in Sources */,
 				26CA747C23DE0494007AAD42 /* Component.cpp in Sources */,
 				26CA748323DE0494007AAD42 /* Application.cpp in Sources */,

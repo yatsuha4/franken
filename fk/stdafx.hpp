@@ -16,8 +16,9 @@
 ***************************************************************************/
 #include <array>
 #include <memory>
-#include <vector>
 #include <sstream>
+#include <stack>
+#include <vector>
 /***********************************************************************//**
 	@brief OpenGL
 ***************************************************************************/
@@ -110,6 +111,11 @@
 	@brief 
 ***************************************************************************/
 namespace fk {
+namespace camera {
+FK_DECLARE_CLASS(Camera);
+}
+using namespace camera;
+
 namespace debug {
 FK_DECLARE_CLASS(Debug);
 FK_DECLARE_CLASS(Logger);

@@ -1,6 +1,7 @@
 ﻿/***********************************************************************//**
 	@file
 ***************************************************************************/
+#include "fk/camera/Camera.hpp"
 #include "fk/render/Renderable.hpp"
 #include "fk/render/Renderer.hpp"
 
@@ -52,6 +53,20 @@ void Renderer::clear(ClearFlag flag, const glm::vec4& color) {
           ((flag & CLEAR_STENCIL) ? GL_STENCIL_BUFFER_BIT : 0));
 }
 /***********************************************************************//**
+	@brief 
+***************************************************************************/
+void Renderer::pushCamera(CameraPtr camera) {
+  cameras_.push(camera);
+  applyCamera(*camera);
+}
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
+void Renderer::popCamera() {
+  cameras_.pop();
+  applyCamera(*cameras_.top());
+}
+/***********************************************************************//**
 	@brief 描画リクエスト
 	@param[in] renderable 描画するもの
 	@param[in] param 描画パラメーター
@@ -87,6 +102,12 @@ void Renderer::checkError() {
       break;
     }
   }
+}
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
+void Renderer::applyCamera(const Camera& camera) {
+  setViewport(camera.getViewport());
 }
 /***********************************************************************//**
 	$Id$
