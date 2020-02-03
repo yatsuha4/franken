@@ -39,6 +39,8 @@ class Renderer
   void clear(ClearFlag flag = CLEAR_ALL, 
              const glm::vec4& color = glm::vec4(0));
 
+  virtual void render(RenderablePtr renderable, const RenderParam& param);
+
   void checkError();
 };
 /***********************************************************************//**

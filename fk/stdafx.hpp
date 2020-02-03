@@ -47,6 +47,7 @@
 	@brief GLM
 ***************************************************************************/
 #include "glm/glm.hpp"
+#include "glm/ext.hpp"
 /***********************************************************************//**
 	@brief マクロ
 ***************************************************************************/
@@ -133,6 +134,7 @@ using namespace platform;
 
 namespace render {
 FK_DECLARE_CLASS(RenderParam);
+FK_DECLARE_CLASS(Renderable);
 FK_DECLARE_CLASS(Renderer);
 FK_DECLARE_CLASS(Shader);
 FK_DECLARE_CLASS(ShaderProgram);

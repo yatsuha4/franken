@@ -17,6 +17,27 @@ class Shader {
     Max
   };
 
+  enum class Attrib {
+    Color, 
+    MatrixIndexes, 
+    MatrixWeights, 
+    Normal, 
+    Pos, 
+    Uv, 
+    Max
+  };
+
+  enum class Uniform {
+    Color, 
+    Matrixes, 
+    ModelViewMatrix, 
+    NormalMatrix, 
+    ProjectionMatrix, 
+    Textures, 
+    UvMatrix, 
+    Max
+  };
+
  private:
   Type type_;
   GLuint id_;
