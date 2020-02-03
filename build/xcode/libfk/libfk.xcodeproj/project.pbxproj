@@ -26,6 +26,9 @@
 		268E803623E8BD1F005AB338 /* Geometry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E803423E8BD1E005AB338 /* Geometry.hpp */; };
 		268E803923E8C30B005AB338 /* Vertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803723E8C30A005AB338 /* Vertex.cpp */; };
 		268E803A23E8C30B005AB338 /* Vertex.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E803823E8C30B005AB338 /* Vertex.hpp */; };
+		268E803D23E8CEE7005AB338 /* Material.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E803B23E8CEE7005AB338 /* Material.hpp */; };
+		268E803E23E8CEE7005AB338 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803C23E8CEE7005AB338 /* Material.cpp */; };
+		268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803F23E8D1F7005AB338 /* RenderParam.cpp */; };
 		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
 		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
 		26CA747C23DE0494007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746E23DE0494007AAD42 /* Component.cpp */; };
@@ -64,6 +67,9 @@
 		268E803423E8BD1E005AB338 /* Geometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geometry.hpp; sourceTree = "<group>"; };
 		268E803723E8C30A005AB338 /* Vertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vertex.cpp; sourceTree = "<group>"; };
 		268E803823E8C30B005AB338 /* Vertex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vertex.hpp; sourceTree = "<group>"; };
+		268E803B23E8CEE7005AB338 /* Material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Material.hpp; sourceTree = "<group>"; };
+		268E803C23E8CEE7005AB338 /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
+		268E803F23E8D1F7005AB338 /* RenderParam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderParam.cpp; sourceTree = "<group>"; };
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746D23DE0494007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
@@ -97,10 +103,13 @@
 		268DB14923E5D56B00F763F7 /* render */ = {
 			isa = PBXGroup;
 			children = (
+				268E803C23E8CEE7005AB338 /* Material.cpp */,
+				268E803B23E8CEE7005AB338 /* Material.hpp */,
 				268E802E23E8BA02005AB338 /* Renderable.cpp */,
 				268E802F23E8BA02005AB338 /* Renderable.hpp */,
 				268DB14C23E5D56B00F763F7 /* Renderer.cpp */,
 				268DB14A23E5D56B00F763F7 /* Renderer.hpp */,
+				268E803F23E8D1F7005AB338 /* RenderParam.cpp */,
 				268DB15023E5D63D00F763F7 /* RenderParam.hpp */,
 				268DB16723E640C800F763F7 /* Shader.cpp */,
 				268DB16623E640C800F763F7 /* Shader.hpp */,
@@ -230,6 +239,7 @@
 				26CA747E23DE0494007AAD42 /* Context.hpp in Headers */,
 				268DB15E23E5FAFC00F763F7 /* Rect.hpp in Headers */,
 				26CA747F23DE0494007AAD42 /* Component.hpp in Headers */,
+				268E803D23E8CEE7005AB338 /* Material.hpp in Headers */,
 				268E803A23E8C30B005AB338 /* Vertex.hpp in Headers */,
 				26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */,
 				268DB16823E640C800F763F7 /* Shader.hpp in Headers */,
@@ -305,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */,
+				268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */,
 				26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */,
 				26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */,
 				26CA749923DF2A70007AAD42 /* Debug.cpp in Sources */,
@@ -316,6 +327,7 @@
 				268DB15B23E5F4AF00F763F7 /* Canvas.cpp in Sources */,
 				268E802C23E79018005AB338 /* ShaderProgram.cpp in Sources */,
 				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
+				268E803E23E8CEE7005AB338 /* Material.cpp in Sources */,
 				268E803523E8BD1F005AB338 /* Geometry.cpp in Sources */,
 				268E803023E8BA02005AB338 /* Renderable.cpp in Sources */,
 				26CA747B23DE0494007AAD42 /* Context.cpp in Sources */,

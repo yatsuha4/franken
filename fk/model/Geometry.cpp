@@ -3,6 +3,7 @@
 ***************************************************************************/
 #include "fk/model/Geometry.hpp"
 #include "fk/model/Vertex.hpp"
+#include "fk/render/RenderParam.hpp"
 
 namespace fk {
 namespace model {
@@ -45,7 +46,9 @@ void Geometry::setup(Renderer& renderer, Mode mode,
 	@copydoc Renderable::onRender
 ***************************************************************************/
 void Geometry::onRender(Renderer& renderer, const RenderParam& param) {
-  if(mode_ != Mode::Null) {
+  if(mode_ != Mode::Null && material_) {
+    RenderParam _param(*material_);
+    _param.merge(param);
     glBindBuffer(GL_ARRAY_BUFFER, 
                  buffers_[static_cast<size_t>(Buffer::Vertex)]);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 

@@ -42,6 +42,7 @@ class Geometry
   Mode mode_;
   std::array<GLuint, static_cast<size_t>(Buffer::Max)> buffers_;
   GLsizei indexNum_;
+  MaterialPtr material_;
 
  public:
   Geometry();
@@ -50,6 +51,8 @@ class Geometry
   void setup(Renderer& renderer, Mode mode, 
              size_t vertexNum, const Vertex* vertexes, 
              size_t indexNum, const index_t* indexes);
+
+  FK_ACCESSOR(Material, material_);
 
  protected:
   void onRender(Renderer& renderer, const RenderParam& param) override;

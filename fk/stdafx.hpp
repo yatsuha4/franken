@@ -139,6 +139,7 @@ namespace platform {
 using namespace platform;
 
 namespace render {
+FK_DECLARE_CLASS(Material);
 FK_DECLARE_CLASS(RenderParam);
 FK_DECLARE_CLASS(Renderable);
 FK_DECLARE_CLASS(Renderer);
