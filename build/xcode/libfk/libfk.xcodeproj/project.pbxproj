@@ -31,6 +31,8 @@
 		268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E803F23E8D1F7005AB338 /* RenderParam.cpp */; };
 		268E804423E8D9A4005AB338 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E804223E8D9A4005AB338 /* Camera.cpp */; };
 		268E804523E8D9A4005AB338 /* Camera.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E804323E8D9A4005AB338 /* Camera.hpp */; };
+		268E804823E8DED8005AB338 /* GeometryCreator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268E804623E8DED8005AB338 /* GeometryCreator.hpp */; };
+		268E804923E8DED8005AB338 /* GeometryCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268E804723E8DED8005AB338 /* GeometryCreator.cpp */; };
 		26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746A23DE0494007AAD42 /* stdafx.hpp */; };
 		26CA747B23DE0494007AAD42 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746D23DE0494007AAD42 /* Context.cpp */; };
 		26CA747C23DE0494007AAD42 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA746E23DE0494007AAD42 /* Component.cpp */; };
@@ -74,6 +76,8 @@
 		268E803F23E8D1F7005AB338 /* RenderParam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderParam.cpp; sourceTree = "<group>"; };
 		268E804223E8D9A4005AB338 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		268E804323E8D9A4005AB338 /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		268E804623E8DED8005AB338 /* GeometryCreator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GeometryCreator.hpp; sourceTree = "<group>"; };
+		268E804723E8DED8005AB338 /* GeometryCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeometryCreator.cpp; sourceTree = "<group>"; };
 		26CA73A623DDA44E007AAD42 /* libfk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA746A23DE0494007AAD42 /* stdafx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stdafx.hpp; sourceTree = "<group>"; };
 		26CA746D23DE0494007AAD42 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			children = (
 				268E803323E8BD1E005AB338 /* Geometry.cpp */,
 				268E803423E8BD1E005AB338 /* Geometry.hpp */,
+				268E804723E8DED8005AB338 /* GeometryCreator.cpp */,
+				268E804623E8DED8005AB338 /* GeometryCreator.hpp */,
 				268E803723E8C30A005AB338 /* Vertex.cpp */,
 				268E803823E8C30B005AB338 /* Vertex.hpp */,
 			);
@@ -259,6 +265,7 @@
 				268DB16823E640C800F763F7 /* Shader.hpp in Headers */,
 				268E803123E8BA02005AB338 /* Renderable.hpp in Headers */,
 				268E802D23E79018005AB338 /* ShaderProgram.hpp in Headers */,
+				268E804823E8DED8005AB338 /* GeometryCreator.hpp in Headers */,
 				268E803623E8BD1F005AB338 /* Geometry.hpp in Headers */,
 				26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */,
 				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
@@ -331,6 +338,7 @@
 			files = (
 				268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */,
 				268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */,
+				268E804923E8DED8005AB338 /* GeometryCreator.cpp in Sources */,
 				26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */,
 				26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */,
 				268E804423E8D9A4005AB338 /* Camera.cpp in Sources */,
