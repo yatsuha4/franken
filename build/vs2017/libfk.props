@@ -4,7 +4,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <IncludePath>$(ProjectDir)..\..\external\windows\glew-2.1.0\include;$(ProjectDir)..\..\external\src\wxWidgets\include\msvc;$(ProjectDir)..\..\external\src\wxWidgets\include;$(ProjectDir)..\..\external\src\glm;$(ProjectDir)..\..;$(IncludePath)</IncludePath>
-    <IntDir>obj\$(Platform)-$(Configuration)\</IntDir>
+    <IntDir>obj\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
     <OutDir>lib\$(Platform)-$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup>

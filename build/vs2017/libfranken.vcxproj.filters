@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="franken">
+      <UniqueIdentifier>{280c92c5-d73c-47a6-9089-91bc20cde5c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="franken\asset">
+      <UniqueIdentifier>{dac7c7d6-e3ea-4564-8cc4-a487149bb909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="franken\gui">
+      <UniqueIdentifier>{b4276654-12df-454f-9a2f-7eb912a1df60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="franken\inspector">
+      <UniqueIdentifier>{41b5def9-457f-4120-8654-2e9ed414fb38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="franken\main">
+      <UniqueIdentifier>{31f0450b-258f-40c3-a5d8-abe283521193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="franken\outliner">
+      <UniqueIdentifier>{8d5c0183-98d8-461f-b2ed-8111f4094791}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\franken\asset\AssetBrowser.cpp">
+      <Filter>franken\asset</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\stdafx.cpp">
+      <Filter>franken</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\gui\Canvas.cpp">
+      <Filter>franken\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\inspector\Inspector.cpp">
+      <Filter>franken\inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\Application.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\ColumnBrowser.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\Component.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\Config.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\Context.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\MainFrame.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\Object.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\main\Property.cpp">
+      <Filter>franken\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\franken\outliner\Outliner.cpp">
+      <Filter>franken\outliner</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\franken\asset\AssetBrowser.hpp">
+      <Filter>franken\asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\franken.hpp">
+      <Filter>franken</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\stdafx.hpp">
+      <Filter>franken</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\gui\Canvas.hpp">
+      <Filter>franken\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\inspector\Inspector.hpp">
+      <Filter>franken\inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\Application.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\ColumnBrowser.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\Component.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\Config.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\Context.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\MainFrame.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\Object.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\main\Property.hpp">
+      <Filter>franken\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\franken\outliner\Outliner.hpp">
+      <Filter>franken\outliner</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
