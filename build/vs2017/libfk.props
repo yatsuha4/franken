@@ -6,6 +6,7 @@
     <IncludePath>$(ProjectDir)..\..\external\windows\glew-2.1.0\include;$(ProjectDir)..\..\external\src\wxWidgets\include\msvc;$(ProjectDir)..\..\external\src\wxWidgets\include;$(ProjectDir)..\..\external\src\glm;$(ProjectDir)..\..;$(IncludePath)</IncludePath>
     <IntDir>obj\$(ProjectName)\$(Platform)-$(Configuration)\</IntDir>
     <OutDir>lib\$(Platform)-$(Configuration)\</OutDir>
+    <LibraryPath>$(ProjectDir)..\..\external\src\wxWidgets\lib\vc_lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
