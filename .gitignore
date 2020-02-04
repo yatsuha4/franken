@@ -4,3 +4,9 @@
 DerivedData/
 xcshareddata/
 xcuserdata/
+# Windows
+*.vcxproj.user
+## VS2017
+/build/vs2017/.vs/
+/build/vs2017/lib/
+/build/vs2017/obj/

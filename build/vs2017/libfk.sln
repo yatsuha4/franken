@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfk", "libfk.vcxproj", "{AA187EB5-DB36-494C-8E41-65C52C8CF78A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Debug|x64.ActiveCfg = Debug|x64
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Debug|x64.Build.0 = Debug|x64
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Debug|x86.Build.0 = Debug|Win32
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Release|x64.ActiveCfg = Release|x64
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Release|x64.Build.0 = Release|x64
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Release|x86.ActiveCfg = Release|Win32
+		{AA187EB5-DB36-494C-8E41-65C52C8CF78A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3C2384D-DA14-4249-B044-57455D6A616C}
+	EndGlobalSection
+EndGlobal

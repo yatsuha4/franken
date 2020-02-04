@@ -37,7 +37,11 @@ void Debug::Log(Logger::Level level, const std::string& message,
 	@brief 
 ***************************************************************************/
 void Debug::Suspend() {
+#if defined(FK_PLATFORM_WINDOWS)
+  DebugBreak();
+#else
   __builtin_trap();
+#endif
 }
 /***********************************************************************//**
 	$Id$

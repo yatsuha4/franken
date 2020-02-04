@@ -8,6 +8,13 @@
 #  define FK_PLATFORM_POSIX
 #  define FK_WITH_WX
 #  define FK_WITH_GL
+#elif defined(WIN32)
+#  define FK_PLATFORM "win32"
+#  define FK_PLATFORM_WIN32
+#  define FK_PLATFORM_WINDOWS
+#  define FK_WITH_WX
+#  define FK_WITH_GL
+#  define _CRT_SECURE_NO_WARNINGS
 #else
 #  error "not support platform"
 #endif
@@ -15,7 +22,9 @@
 	@brief 
 ***************************************************************************/
 #include <array>
+#include <bitset>
 #include <memory>
+#include <mutex>
 #include <sstream>
 #include <stack>
 #include <vector>
@@ -27,6 +36,8 @@
 #    define GL_SILENCE_DEPRECATION
 #    define GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED
 #    include <OpenGL/gl3.h>
+#  elif defined(FK_PLATFORM_WINDOWS)
+#    include <GL/glew.h>
 #  endif
 #endif
 /***********************************************************************//**

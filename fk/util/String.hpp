@@ -18,7 +18,7 @@ class String {
   static std::string Format(const char* format, const Args&... args) {
     std::vector<char> buffer(128);
     while(std::snprintf(buffer.data(), buffer.size(), format, args...) >= 
-          buffer.size()) {
+          static_cast<int>(buffer.size())) {
       buffer.resize(buffer.size() * 2);
     }
     return std::string(buffer.data());

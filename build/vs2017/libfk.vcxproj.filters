@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fk">
+      <UniqueIdentifier>{cffb3e3b-bc17-438f-87e3-600ac56dd6f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\camera">
+      <UniqueIdentifier>{005063fc-b589-4dd4-a78a-14890ac70c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\debug">
+      <UniqueIdentifier>{48fafa75-d463-4ff1-9dbb-dbb346648770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\framework">
+      <UniqueIdentifier>{36794561-a13a-4d87-b120-a49a3b717c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\math">
+      <UniqueIdentifier>{0b1ca5da-bcfe-40c8-8eb3-7d054ebf8216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\model">
+      <UniqueIdentifier>{56a44dab-1a1b-4480-a797-49769ce7c88f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\platform">
+      <UniqueIdentifier>{c36132ad-f60c-490a-9dc3-555e97ca42a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\platform\wx">
+      <UniqueIdentifier>{4ccd36cb-fa4e-42dd-bac9-4399147367f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\render">
+      <UniqueIdentifier>{f0a94d18-11d4-4485-b726-95ad4335f569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fk\util">
+      <UniqueIdentifier>{eff53a40-78a3-4c3d-802a-3b8dd44109f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\fk\camera\Camera.cpp">
+      <Filter>fk\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\stdafx.cpp">
+      <Filter>fk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\debug\Debug.cpp">
+      <Filter>fk\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\debug\Logger.cpp">
+      <Filter>fk\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\framework\Behaviour.cpp">
+      <Filter>fk\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\framework\Component.cpp">
+      <Filter>fk\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\framework\Context.cpp">
+      <Filter>fk\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\framework\Object.cpp">
+      <Filter>fk\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\model\Geometry.cpp">
+      <Filter>fk\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\model\GeometryCreator.cpp">
+      <Filter>fk\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\model\Vertex.cpp">
+      <Filter>fk\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\platform\wx\Application.cpp">
+      <Filter>fk\platform\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\platform\wx\Canvas.cpp">
+      <Filter>fk\platform\wx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\render\Material.cpp">
+      <Filter>fk\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\render\Renderable.cpp">
+      <Filter>fk\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\render\Renderer.cpp">
+      <Filter>fk\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\render\RenderParam.cpp">
+      <Filter>fk\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\render\Shader.cpp">
+      <Filter>fk\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\render\ShaderProgram.cpp">
+      <Filter>fk\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fk\util\String.cpp">
+      <Filter>fk\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fk\camera\Camera.hpp">
+      <Filter>fk\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\fk.hpp">
+      <Filter>fk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\stdafx.hpp">
+      <Filter>fk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\debug\Debug.hpp">
+      <Filter>fk\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\debug\Logger.hpp">
+      <Filter>fk\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\framework\Behaviour.hpp">
+      <Filter>fk\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\framework\Component.hpp">
+      <Filter>fk\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\framework\Context.hpp">
+      <Filter>fk\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\framework\ContextHolder.hpp">
+      <Filter>fk\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\framework\Object.hpp">
+      <Filter>fk\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\math\Rect.hpp">
+      <Filter>fk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\model\Geometry.hpp">
+      <Filter>fk\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\model\GeometryCreator.hpp">
+      <Filter>fk\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\model\Vertex.hpp">
+      <Filter>fk\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\platform\wx\Application.hpp">
+      <Filter>fk\platform\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\platform\wx\Canvas.hpp">
+      <Filter>fk\platform\wx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\render\Material.hpp">
+      <Filter>fk\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\render\Renderable.hpp">
+      <Filter>fk\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\render\Renderer.hpp">
+      <Filter>fk\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\render\RenderParam.hpp">
+      <Filter>fk\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\render\Shader.hpp">
+      <Filter>fk\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\render\ShaderProgram.hpp">
+      <Filter>fk\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fk\util\String.hpp">
+      <Filter>fk\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
