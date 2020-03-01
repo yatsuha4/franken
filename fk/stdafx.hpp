@@ -23,6 +23,7 @@
 ***************************************************************************/
 #include <array>
 #include <bitset>
+#include <filesystem>
 #include <memory>
 #include <mutex>
 #include <sstream>

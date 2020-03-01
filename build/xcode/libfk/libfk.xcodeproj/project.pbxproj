@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26782C90240BE6320084CBA2 /* SQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26782C8E240BE6320084CBA2 /* SQLite3.cpp */; };
+		26782C91240BE6320084CBA2 /* SQLite3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26782C8F240BE6320084CBA2 /* SQLite3.hpp */; };
 		268DB14D23E5D56B00F763F7 /* Renderer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14A23E5D56B00F763F7 /* Renderer.hpp */; };
 		268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB14C23E5D56B00F763F7 /* Renderer.cpp */; };
 		268DB15123E5D63D00F763F7 /* RenderParam.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB15023E5D63D00F763F7 /* RenderParam.hpp */; };
@@ -52,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26782C8E240BE6320084CBA2 /* SQLite3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLite3.cpp; sourceTree = "<group>"; };
+		26782C8F240BE6320084CBA2 /* SQLite3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SQLite3.hpp; sourceTree = "<group>"; };
 		268DB14A23E5D56B00F763F7 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 		268DB14C23E5D56B00F763F7 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 		268DB15023E5D63D00F763F7 /* RenderParam.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderParam.hpp; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26782C8D240BE6320084CBA2 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				26782C8E240BE6320084CBA2 /* SQLite3.cpp */,
+				26782C8F240BE6320084CBA2 /* SQLite3.hpp */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
 		268DB14923E5D56B00F763F7 /* render */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				268E804123E8D9A4005AB338 /* camera */,
+				26782C8D240BE6320084CBA2 /* db */,
 				26CA749223DF27CF007AAD42 /* debug */,
 				26CA747823DE0494007AAD42 /* fk.hpp */,
 				26CA746B23DE0494007AAD42 /* framework */,
@@ -267,6 +281,7 @@
 				268E802D23E79018005AB338 /* ShaderProgram.hpp in Headers */,
 				268E804823E8DED8005AB338 /* GeometryCreator.hpp in Headers */,
 				268E803623E8BD1F005AB338 /* Geometry.hpp in Headers */,
+				26782C91240BE6320084CBA2 /* SQLite3.hpp in Headers */,
 				26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */,
 				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
 				26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */,
@@ -337,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */,
+				26782C90240BE6320084CBA2 /* SQLite3.cpp in Sources */,
 				268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */,
 				268E804923E8DED8005AB338 /* GeometryCreator.cpp in Sources */,
 				26CA749623DF27CF007AAD42 /* Logger.cpp in Sources */,
@@ -367,7 +383,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -433,7 +449,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
