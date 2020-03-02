@@ -10,9 +10,10 @@ namespace fk::symbol {
 	@brief 
 ***************************************************************************/
 bool Symbolizer::open(const std::filesystem::path& path) {
+  close();
   auto database = std::make_unique<SQLite3>();
   if(database->open(path)) {
-    databases_.push_back(std::move(database));
+    database_ = std::move(database);
     return true;
   }
   return false;
@@ -21,43 +22,29 @@ bool Symbolizer::open(const std::filesystem::path& path) {
 	@brief 
 ***************************************************************************/
 void Symbolizer::close() {
-  for(auto& database : databases_) {
-    database->close();
-  }
-  databases_.clear();
+  database_.reset();
 }
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
 symbol_t Symbolizer::getSymbol(const std::string& label) {
-  for(auto& database : databases_) {
-    symbol_t symbol;
-    if(findSymbol(*database, label, symbol)) {
-      return symbol;
+  symbol_t symbol = 0;
+  if(!Symbol::Get(label.c_str(), symbol)) {
+    if(!findSymbol(label, symbol)) {
+      if(!appendSymbol(label, symbol)) {
+        throw Error();
+      }
     }
   }
-  return 0;
+  return symbol;
 }
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-std::string Symbolizer::getLabel(symbol_t symbol) {
-  for(auto& database : databases_) {
-    std::string label;
-    if(findLabel(*database, symbol, label)) {
-      return label;
-    }
-  }
-  return std::string();
-}
-/***********************************************************************//**
-	@brief 
-***************************************************************************/
-bool Symbolizer::findSymbol(SQLite3& database, const std::string& label, 
-                            symbol_t& symbol) {
+bool Symbolizer::findSymbol(const std::string& label, symbol_t& symbol) {
   std::ostringstream query;
   query << "select symbol from symbol where label = '" << label << "'";
-  if(auto statement = database.execute(query.str())) {
+  if(auto statement = database_->execute(query.str())) {
     symbol = static_cast<symbol_t>(statement->get<int>(0));
     return true;
   }
@@ -66,44 +53,26 @@ bool Symbolizer::findSymbol(SQLite3& database, const std::string& label,
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-bool Symbolizer::findLabel(SQLite3& database, symbol_t symbol, 
-                           std::string& label) {
-  std::ostringstream query;
-  query << "select label from symbol where symbol = " << symbol;
-  if(auto statement = database.execute(query.str())) {
-    label = statement->get<std::string>(0);
-    return true;
-  }
-  return false;
-}
-/***********************************************************************//**
-	@brief 
-***************************************************************************/
-symbol_t Symbolizer::appendSymbol(SQLite3& database, 
-                                  const std::string& label) {
+bool Symbolizer::appendSymbol(const std::string& label, symbol_t& symbol) {
   std::ostringstream query;
   query << "insert into symbol (label) values('" << label << "')";
-  if(!database.execute(query.str())) {
-    createTable(database);
-    if(!database.execute(query.str())) {
+  if(!database_->execute(query.str())) {
+    if(!createTable() || !database_->execute(query.str())) {
+      return false;
     }
   }
-  return static_cast<symbol_t>(database.getLastInsertRowId());
+  symbol = static_cast<symbol_t>(database_->getLastInsertRowId());
+  return true;
 }
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-bool Symbolizer::createTable(SQLite3& database) {
-  if(!database.execute("create table symbol ("
-                       "symbol integer primary key autoincrement, "
-                       "label text unique not null)")) {
-    int a = 0;
-    switch(a) {
-    case Symbol::Get("APPLE"):
-      break;
-    default:
-      break;
-    }
+bool Symbolizer::createTable() {
+  if(database_->execute("create table symbol ("
+                        "symbol integer primary key autoincrement, "
+                        "label text unique not null)")) {
+    database_->setLastInsertRowId(SYMBOL_USER_TOP);
+    return true;
   }
   return false;
 }

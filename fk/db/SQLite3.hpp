@@ -30,6 +30,7 @@ class SQLite3 {
   StatementPtr execute(const std::string& query);
 
   int getLastInsertRowId() const;
+  void setLastInsertRowId(int id);
 };
 /***********************************************************************//**
 	@brief 

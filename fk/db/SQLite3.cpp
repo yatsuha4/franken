@@ -75,6 +75,13 @@ int SQLite3::getLastInsertRowId() const {
   return static_cast<int>(sqlite3_last_insert_rowid(db_));
 }
 /***********************************************************************//**
+	@brief 
+***************************************************************************/
+void SQLite3::setLastInsertRowId(int id) {
+  FK_ASSERT(isOpen());
+  sqlite3_set_last_insert_rowid(db_, id);
+}
+/***********************************************************************//**
 	@brief コンストラクタ
 ***************************************************************************/
 SQLite3::Statement::Statement(sqlite3_stmt* stmt)

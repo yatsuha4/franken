@@ -8,24 +8,26 @@ namespace fk::symbol {
 	@brief シンボライザー
 ***************************************************************************/
 class Symbolizer {
+ public:
+  class Error {};
+
+  static const symbol_t SYMBOL_USER_TOP = 0x10000;
+
  private:
-  std::vector<std::unique_ptr<SQLite3>> databases_;
+  std::unique_ptr<SQLite3> database_;
 
  public:
   Symbolizer() = default;
-  ~Symbolizer() = default;
+  virtual ~Symbolizer() = default;
 
   bool open(const std::filesystem::path& path);
   void close();
 
-  symbol_t getSymbol(const std::string& label);
-  std::string getLabel(symbol_t symbol);
+  virtual symbol_t getSymbol(const std::string& label);
 
  private:
-  bool findSymbol(SQLite3& database, const std::string& label, 
-                  symbol_t& symbol);
-  bool findLabel(SQLite3& database, symbol_t symbol, std::string& label);
-  symbol_t appendSymbol(SQLite3& database, const std::string& label);
-  bool createTable(SQLite3& database);
+  bool findSymbol(const std::string& label, symbol_t& symbol);
+  bool appendSymbol(const std::string& label, symbol_t& symbol);
+  bool createTable();
 };
 }
