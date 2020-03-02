@@ -59,11 +59,20 @@ bool SQLite3::step(const Statement& statement) {
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
-bool SQLite3::execute(const std::string& query) {
+SQLite3::StatementPtr SQLite3::execute(const std::string& query) {
   if(auto statement = prepare(query)) {
-    return sqlite3_step(statement->getStmt()) == SQLITE_DONE;
+    if(sqlite3_step(statement->getStmt()) == SQLITE_DONE) {
+      return statement;
+    }
   }
-  return false;
+  return nullptr;
+}
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
+int SQLite3::getLastInsertRowId() const {
+  FK_ASSERT(isOpen());
+  return static_cast<int>(sqlite3_last_insert_rowid(db_));
 }
 /***********************************************************************//**
 	@brief コンストラクタ

@@ -27,7 +27,9 @@ class SQLite3 {
 
   StatementPtr prepare(const std::string& query);
   bool step(const Statement& statement);
-  bool execute(const std::string& query);
+  StatementPtr execute(const std::string& query);
+
+  int getLastInsertRowId() const;
 };
 /***********************************************************************//**
 	@brief 

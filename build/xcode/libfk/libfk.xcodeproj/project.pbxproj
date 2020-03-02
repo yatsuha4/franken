@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		26782C90240BE6320084CBA2 /* SQLite3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26782C8E240BE6320084CBA2 /* SQLite3.cpp */; };
 		26782C91240BE6320084CBA2 /* SQLite3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26782C8F240BE6320084CBA2 /* SQLite3.hpp */; };
+		26782C99240CE8310084CBA2 /* Symbolizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26782C97240CE8310084CBA2 /* Symbolizer.hpp */; };
+		26782C9A240CE8310084CBA2 /* Symbolizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26782C98240CE8310084CBA2 /* Symbolizer.cpp */; };
+		26782C9C240CE9AD0084CBA2 /* Symbol.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26782C9B240CE9AD0084CBA2 /* Symbol.hpp */; };
 		268DB14D23E5D56B00F763F7 /* Renderer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB14A23E5D56B00F763F7 /* Renderer.hpp */; };
 		268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 268DB14C23E5D56B00F763F7 /* Renderer.cpp */; };
 		268DB15123E5D63D00F763F7 /* RenderParam.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 268DB15023E5D63D00F763F7 /* RenderParam.hpp */; };
@@ -56,6 +59,9 @@
 /* Begin PBXFileReference section */
 		26782C8E240BE6320084CBA2 /* SQLite3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLite3.cpp; sourceTree = "<group>"; };
 		26782C8F240BE6320084CBA2 /* SQLite3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SQLite3.hpp; sourceTree = "<group>"; };
+		26782C97240CE8310084CBA2 /* Symbolizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Symbolizer.hpp; sourceTree = "<group>"; };
+		26782C98240CE8310084CBA2 /* Symbolizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Symbolizer.cpp; sourceTree = "<group>"; };
+		26782C9B240CE9AD0084CBA2 /* Symbol.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Symbol.hpp; sourceTree = "<group>"; };
 		268DB14A23E5D56B00F763F7 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 		268DB14C23E5D56B00F763F7 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 		268DB15023E5D63D00F763F7 /* RenderParam.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderParam.hpp; sourceTree = "<group>"; };
@@ -119,6 +125,16 @@
 				26782C8F240BE6320084CBA2 /* SQLite3.hpp */,
 			);
 			path = db;
+			sourceTree = "<group>";
+		};
+		26782C96240CE8310084CBA2 /* symbol */ = {
+			isa = PBXGroup;
+			children = (
+				26782C9B240CE9AD0084CBA2 /* Symbol.hpp */,
+				26782C98240CE8310084CBA2 /* Symbolizer.cpp */,
+				26782C97240CE8310084CBA2 /* Symbolizer.hpp */,
+			);
+			path = symbol;
 			sourceTree = "<group>";
 		};
 		268DB14923E5D56B00F763F7 /* render */ = {
@@ -199,6 +215,7 @@
 				26CA747423DE0494007AAD42 /* platform */,
 				268DB14923E5D56B00F763F7 /* render */,
 				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
+				26782C96240CE8310084CBA2 /* symbol */,
 				26CA749B23DF2CF2007AAD42 /* util */,
 			);
 			name = fk;
@@ -287,7 +304,9 @@
 				26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */,
 				268DB14D23E5D56B00F763F7 /* Renderer.hpp in Headers */,
 				26CA748023DE0494007AAD42 /* Object.hpp in Headers */,
+				26782C99240CE8310084CBA2 /* Symbolizer.hpp in Headers */,
 				268DB15123E5D63D00F763F7 /* RenderParam.hpp in Headers */,
+				26782C9C240CE9AD0084CBA2 /* Symbol.hpp in Headers */,
 				26CA748223DE0494007AAD42 /* Application.hpp in Headers */,
 				268DB15623E5EC4B00F763F7 /* ContextHolder.hpp in Headers */,
 				268E804523E8D9A4005AB338 /* Camera.hpp in Headers */,
@@ -366,6 +385,7 @@
 				268DB16923E640C800F763F7 /* Shader.cpp in Sources */,
 				268DB15B23E5F4AF00F763F7 /* Canvas.cpp in Sources */,
 				268E802C23E79018005AB338 /* ShaderProgram.cpp in Sources */,
+				26782C9A240CE8310084CBA2 /* Symbolizer.cpp in Sources */,
 				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
 				268E803E23E8CEE7005AB338 /* Material.cpp in Sources */,
 				268E803523E8BD1F005AB338 /* Geometry.cpp in Sources */,

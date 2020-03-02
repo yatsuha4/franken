@@ -123,10 +123,17 @@
 	@brief 
 ***************************************************************************/
 namespace fk {
+using symbol_t = uint32_t;
+
 namespace camera {
 FK_DECLARE_CLASS(Camera);
 }
 using namespace camera;
+
+namespace db {
+FK_DECLARE_CLASS(SQLite3);
+}
+using namespace db;
 
 namespace debug {
 FK_DECLARE_CLASS(Debug);
@@ -165,6 +172,11 @@ FK_DECLARE_CLASS(Shader);
 FK_DECLARE_CLASS(ShaderProgram);
 }
 using namespace render;
+
+namespace symbol {
+FK_DECLARE_CLASS(Symbolizer);
+}
+using namespace symbol;
 
 namespace util {
 FK_DECLARE_CLASS(String);
