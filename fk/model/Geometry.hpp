@@ -16,9 +16,8 @@ class Geometry
   using super = Geometry;
 
  public:
-  static const size_t VERTEX_MAX = 0x10000;
-
   using index_t = uint16_t;
+  static const size_t VERTEX_MAX = std::numeric_limits<index_t>::max() + 1;
 
   enum class Mode {
     LineLoop, 
