@@ -54,6 +54,17 @@
 		26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA749823DF2A70007AAD42 /* Debug.hpp */; };
 		26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA749C23DF2CF2007AAD42 /* String.hpp */; };
 		26CA749F23DF2EB6007AAD42 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA749E23DF2EB6007AAD42 /* String.cpp */; };
+		26D2D35B2413B4740024EFDA /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D2D3592413B4740024EFDA /* Mesh.cpp */; };
+		26D2D35C2413B4740024EFDA /* Mesh.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D35A2413B4740024EFDA /* Mesh.hpp */; };
+		26D2D35F2413B72B0024EFDA /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D2D35D2413B72B0024EFDA /* Model.cpp */; };
+		26D2D3602413B72B0024EFDA /* Model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D35E2413B72B0024EFDA /* Model.hpp */; };
+		26D2D3652417721A0024EFDA /* ResourceManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D3622417721A0024EFDA /* ResourceManager.hpp */; };
+		26D2D3662417721A0024EFDA /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D2D3632417721A0024EFDA /* ResourceManager.cpp */; };
+		26D2D3672417721A0024EFDA /* Resource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D3642417721A0024EFDA /* Resource.hpp */; };
+		26D2D36C24178CB40024EFDA /* MemoryResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D2D36824178CB40024EFDA /* MemoryResource.cpp */; };
+		26D2D36D24178CB40024EFDA /* FileResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D2D36924178CB40024EFDA /* FileResource.cpp */; };
+		26D2D36E24178CB40024EFDA /* MemoryResource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D36A24178CB40024EFDA /* MemoryResource.hpp */; };
+		26D2D36F24178CB40024EFDA /* FileResource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D36B24178CB40024EFDA /* FileResource.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +116,17 @@
 		26CA749823DF2A70007AAD42 /* Debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
 		26CA749C23DF2CF2007AAD42 /* String.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
 		26CA749E23DF2EB6007AAD42 /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
+		26D2D3592413B4740024EFDA /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		26D2D35A2413B4740024EFDA /* Mesh.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		26D2D35D2413B72B0024EFDA /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		26D2D35E2413B72B0024EFDA /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		26D2D3622417721A0024EFDA /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
+		26D2D3632417721A0024EFDA /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		26D2D3642417721A0024EFDA /* Resource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Resource.hpp; sourceTree = "<group>"; };
+		26D2D36824178CB40024EFDA /* MemoryResource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryResource.cpp; sourceTree = "<group>"; };
+		26D2D36924178CB40024EFDA /* FileResource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileResource.cpp; sourceTree = "<group>"; };
+		26D2D36A24178CB40024EFDA /* MemoryResource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MemoryResource.hpp; sourceTree = "<group>"; };
+		26D2D36B24178CB40024EFDA /* FileResource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileResource.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +193,10 @@
 				268E803423E8BD1E005AB338 /* Geometry.hpp */,
 				268E804723E8DED8005AB338 /* GeometryCreator.cpp */,
 				268E804623E8DED8005AB338 /* GeometryCreator.hpp */,
+				26D2D3592413B4740024EFDA /* Mesh.cpp */,
+				26D2D35A2413B4740024EFDA /* Mesh.hpp */,
+				26D2D35D2413B72B0024EFDA /* Model.cpp */,
+				26D2D35E2413B72B0024EFDA /* Model.hpp */,
 				268E803723E8C30A005AB338 /* Vertex.cpp */,
 				268E803823E8C30B005AB338 /* Vertex.hpp */,
 			);
@@ -214,6 +240,7 @@
 				268E803223E8BD1E005AB338 /* model */,
 				26CA747423DE0494007AAD42 /* platform */,
 				268DB14923E5D56B00F763F7 /* render */,
+				26D2D3612417721A0024EFDA /* resource */,
 				26CA746A23DE0494007AAD42 /* stdafx.hpp */,
 				26782C96240CE8310084CBA2 /* symbol */,
 				26CA749B23DF2CF2007AAD42 /* util */,
@@ -277,6 +304,20 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		26D2D3612417721A0024EFDA /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				26D2D36924178CB40024EFDA /* FileResource.cpp */,
+				26D2D36B24178CB40024EFDA /* FileResource.hpp */,
+				26D2D36824178CB40024EFDA /* MemoryResource.cpp */,
+				26D2D36A24178CB40024EFDA /* MemoryResource.hpp */,
+				26D2D3642417721A0024EFDA /* Resource.hpp */,
+				26D2D3632417721A0024EFDA /* ResourceManager.cpp */,
+				26D2D3622417721A0024EFDA /* ResourceManager.hpp */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -288,6 +329,9 @@
 				268DB15523E5EC4B00F763F7 /* Behaviour.hpp in Headers */,
 				26CA749523DF27CF007AAD42 /* Logger.hpp in Headers */,
 				26CA747E23DE0494007AAD42 /* Context.hpp in Headers */,
+				26D2D35C2413B4740024EFDA /* Mesh.hpp in Headers */,
+				26D2D3652417721A0024EFDA /* ResourceManager.hpp in Headers */,
+				26D2D3672417721A0024EFDA /* Resource.hpp in Headers */,
 				268DB15E23E5FAFC00F763F7 /* Rect.hpp in Headers */,
 				26CA747F23DE0494007AAD42 /* Component.hpp in Headers */,
 				268E803D23E8CEE7005AB338 /* Material.hpp in Headers */,
@@ -295,10 +339,12 @@
 				26CA747923DE0494007AAD42 /* stdafx.hpp in Headers */,
 				268DB16823E640C800F763F7 /* Shader.hpp in Headers */,
 				268E803123E8BA02005AB338 /* Renderable.hpp in Headers */,
+				26D2D36F24178CB40024EFDA /* FileResource.hpp in Headers */,
 				268E802D23E79018005AB338 /* ShaderProgram.hpp in Headers */,
 				268E804823E8DED8005AB338 /* GeometryCreator.hpp in Headers */,
 				268E803623E8BD1F005AB338 /* Geometry.hpp in Headers */,
 				26782C91240BE6320084CBA2 /* SQLite3.hpp in Headers */,
+				26D2D3602413B72B0024EFDA /* Model.hpp in Headers */,
 				26CA749A23DF2A70007AAD42 /* Debug.hpp in Headers */,
 				26CA748423DE0494007AAD42 /* fk.hpp in Headers */,
 				26CA749D23DF2CF2007AAD42 /* String.hpp in Headers */,
@@ -309,6 +355,7 @@
 				26782C9C240CE9AD0084CBA2 /* Symbol.hpp in Headers */,
 				26CA748223DE0494007AAD42 /* Application.hpp in Headers */,
 				268DB15623E5EC4B00F763F7 /* ContextHolder.hpp in Headers */,
+				26D2D36E24178CB40024EFDA /* MemoryResource.hpp in Headers */,
 				268E804523E8D9A4005AB338 /* Camera.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				268DB14F23E5D56B00F763F7 /* Renderer.cpp in Sources */,
+				26D2D36D24178CB40024EFDA /* FileResource.cpp in Sources */,
+				26D2D35F2413B72B0024EFDA /* Model.cpp in Sources */,
 				26782C90240BE6320084CBA2 /* SQLite3.cpp in Sources */,
 				268E804023E8D1F7005AB338 /* RenderParam.cpp in Sources */,
 				268E804923E8DED8005AB338 /* GeometryCreator.cpp in Sources */,
@@ -380,17 +429,20 @@
 				26CA749923DF2A70007AAD42 /* Debug.cpp in Sources */,
 				26CA747C23DE0494007AAD42 /* Component.cpp in Sources */,
 				26CA748323DE0494007AAD42 /* Application.cpp in Sources */,
+				26D2D35B2413B4740024EFDA /* Mesh.cpp in Sources */,
 				268E803923E8C30B005AB338 /* Vertex.cpp in Sources */,
 				268DB15723E5EC4B00F763F7 /* Behaviour.cpp in Sources */,
 				268DB16923E640C800F763F7 /* Shader.cpp in Sources */,
 				268DB15B23E5F4AF00F763F7 /* Canvas.cpp in Sources */,
 				268E802C23E79018005AB338 /* ShaderProgram.cpp in Sources */,
 				26782C9A240CE8310084CBA2 /* Symbolizer.cpp in Sources */,
+				26D2D36C24178CB40024EFDA /* MemoryResource.cpp in Sources */,
 				26CA747D23DE0494007AAD42 /* Object.cpp in Sources */,
 				268E803E23E8CEE7005AB338 /* Material.cpp in Sources */,
 				268E803523E8BD1F005AB338 /* Geometry.cpp in Sources */,
 				268E803023E8BA02005AB338 /* Renderable.cpp in Sources */,
 				26CA747B23DE0494007AAD42 /* Context.cpp in Sources */,
+				26D2D3662417721A0024EFDA /* ResourceManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

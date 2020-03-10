@@ -10,6 +10,9 @@
 #include "fk/framework/ContextHolder.hpp"
 #include "fk/framework/Object.hpp"
 #include "fk/math/Rect.hpp"
+#include "fk/model/Geometry.hpp"
+#include "fk/model/Mesh.hpp"
+#include "fk/model/Vertex.hpp"
 #include "fk/render/RenderParam.hpp"
 #include "fk/render/Renderer.hpp"
 

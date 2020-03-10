@@ -24,6 +24,7 @@
 #include <array>
 #include <bitset>
 #include <filesystem>
+#include <fstream>
 #include <memory>
 #include <mutex>
 #include <sstream>
@@ -155,6 +156,8 @@ using namespace math;
 
 namespace model {
 FK_DECLARE_CLASS(Geometry);
+FK_DECLARE_CLASS(Mesh);
+FK_DECLARE_CLASS(Model);
 FK_DECLARE_CLASS(Vertex);
 }
 using namespace model;
@@ -172,6 +175,13 @@ FK_DECLARE_CLASS(Shader);
 FK_DECLARE_CLASS(ShaderProgram);
 }
 using namespace render;
+
+namespace resource {
+FK_DECLARE_CLASS(FileResource);
+FK_DECLARE_CLASS(Resource);
+FK_DECLARE_CLASS(ResourceManager);
+}
+using namespace resource;
 
 namespace symbol {
 FK_DECLARE_CLASS(Symbolizer);

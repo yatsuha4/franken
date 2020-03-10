@@ -16,11 +16,22 @@
 /***********************************************************************//**
 	@brief 
 ***************************************************************************/
+#include <fbxsdk.h>
+/***********************************************************************//**
+	@brief 
+***************************************************************************/
 namespace franken {
 namespace asset {
 FK_DECLARE_CLASS(AssetBrowser);
 }
 using namespace asset;
+
+namespace file {
+namespace fbx {
+FK_DECLARE_CLASS(Importer);
+}
+}
+using namespace file;
 
 namespace gui {
 FK_DECLARE_CLASS(Canvas);

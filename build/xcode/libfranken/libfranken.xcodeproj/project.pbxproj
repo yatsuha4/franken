@@ -33,6 +33,8 @@
 		26CA746623DE0273007AAD42 /* franken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA746123DE0273007AAD42 /* franken.hpp */; };
 		26CA748C23DE17CA007AAD42 /* AssetBrowser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26CA748A23DE17CA007AAD42 /* AssetBrowser.hpp */; };
 		26CA748D23DE17CA007AAD42 /* AssetBrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CA748B23DE17CA007AAD42 /* AssetBrowser.cpp */; };
+		26D2D3552413997C0024EFDA /* Importer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 26D2D3532413997C0024EFDA /* Importer.hpp */; };
+		26D2D3562413997C0024EFDA /* Importer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26D2D3542413997C0024EFDA /* Importer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		26CA746123DE0273007AAD42 /* franken.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = franken.hpp; sourceTree = "<group>"; };
 		26CA748A23DE17CA007AAD42 /* AssetBrowser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AssetBrowser.hpp; sourceTree = "<group>"; };
 		26CA748B23DE17CA007AAD42 /* AssetBrowser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetBrowser.cpp; sourceTree = "<group>"; };
+		26D2D3532413997C0024EFDA /* Importer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Importer.hpp; sourceTree = "<group>"; };
+		26D2D3542413997C0024EFDA /* Importer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Importer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				26CA748923DE17CA007AAD42 /* asset */,
+				26D2D3512413997C0024EFDA /* file */,
 				26CA746123DE0273007AAD42 /* franken.hpp */,
 				268DB16123E6200600F763F7 /* gui */,
 				268DB13323E59C6900F763F7 /* inspector */,
@@ -166,6 +171,23 @@
 			path = asset;
 			sourceTree = "<group>";
 		};
+		26D2D3512413997C0024EFDA /* file */ = {
+			isa = PBXGroup;
+			children = (
+				26D2D3522413997C0024EFDA /* fbx */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		26D2D3522413997C0024EFDA /* fbx */ = {
+			isa = PBXGroup;
+			children = (
+				26D2D3532413997C0024EFDA /* Importer.hpp */,
+				26D2D3542413997C0024EFDA /* Importer.cpp */,
+			);
+			path = fbx;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -178,6 +200,7 @@
 				268DB12C23E5917200F763F7 /* Object.hpp in Headers */,
 				268DB11F23E4CA5400F763F7 /* MainFrame.hpp in Headers */,
 				268DB14623E5A3BF00F763F7 /* Property.hpp in Headers */,
+				26D2D3552413997C0024EFDA /* Importer.hpp in Headers */,
 				26CA746623DE0273007AAD42 /* franken.hpp in Headers */,
 				268DB11E23E4CA5400F763F7 /* ColumnBrowser.hpp in Headers */,
 				268DB12423E4CBB600F763F7 /* Config.hpp in Headers */,
@@ -247,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D2D3562413997C0024EFDA /* Importer.cpp in Sources */,
 				268DB14523E5A3BF00F763F7 /* Property.cpp in Sources */,
 				268DB11C23E4CA5400F763F7 /* MainFrame.cpp in Sources */,
 				268DB14723E5A3BF00F763F7 /* Component.cpp in Sources */,
@@ -271,7 +295,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -317,17 +341,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../../..",
-					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
-					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
-					"$(PROJECT_DIR)/../../../external/src/glm",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "/Applications/Autodesk/FBX\\ SDK/2020.0.1/include";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../..",
+					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
+					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
+					"$(PROJECT_DIR)/../../../external/src/glm",
+				);
 			};
 			name = Debug;
 		};
@@ -337,7 +362,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -377,16 +402,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "/Applications/Autodesk/FBX\\ SDK/2020.0.1/include";
+				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../../..",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/include/wx-3.1",
 					"$(PROJECT_DIR)/../../../external/opt/mac/wxWidgets/lib/wx/include/osx_cocoa-unicode-static-3.1",
 					"$(PROJECT_DIR)/../../../external/src/glm",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
